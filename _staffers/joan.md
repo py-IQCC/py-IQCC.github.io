@@ -6,4 +6,4 @@ email: joangrebol@gmail.com
 photo: kevin.jpg -->
 ---
 
-I like teaching Computer Science!
+<!-- I like teaching Computer Science! -->
