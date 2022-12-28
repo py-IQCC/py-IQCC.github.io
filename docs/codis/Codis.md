@@ -8,7 +8,5 @@ has_children: true
 Aquí teniu tots els codis que hem elaborat.
 
 ## Continguts
-1. TOC
-{:toc}
-
+{: .fs-6 .fw-300 }
 ---
