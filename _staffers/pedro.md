@@ -6,4 +6,4 @@ email: pedro.salvador@udg.edu
 photo: kevin.jpg -->
 ---
 
-[Schedule an appointment](#){: .btn .btn-outline }
+<!-- [Schedule an appointment](#){: .btn .btn-outline } -->
