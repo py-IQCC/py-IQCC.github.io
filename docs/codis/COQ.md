@@ -1,6 +1,6 @@
 ---
 layout: default
-title: COQ
+title: Complements de Química
 parent: Codis
 ---
 
@@ -43,3 +43,35 @@ def psi_2(n,L,x):
 I ara ja si, fem les gràfiques.
 
 >****Nota:*** No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
+
+```yaml
+pyplt.figure(figsize=(15,10))
+
+pyplt.suptitle("Funcions d'ona", fontsize=18)
+
+for n in range(1,4):
+
+    psi_2_list = []
+    psi_list = []
+    
+    for x in x_list:
+        psi_2_list.append(psi_2(n,L,x))
+        psi_list.append(psi(n,L,x))
+    pyplt.subplot(3,2,2*n-1)
+    pyplt.plot(x_list, psi_list)
+    pyplt.xlabel("L", fontsize=13)
+    pyplt.ylabel("$\psi$", fontsize=13)
+    pyplt.xticks(np.arange(0, L, step=0.5))
+    pyplt.title("n="+str(n), fontsize=16)
+    pyplt.grid()
+    pyplt.subplot(3,2,2*n)
+    pyplt.plot(x_list, psi_2_list)
+    pyplt.xlabel("L", fontsize=13)
+    pyplt.ylabel("$\psi^2$", fontsize=13)
+    pyplt.xticks(np.arange(0, L, step=0.5))
+    pyplt.title("n="+str(n), fontsize=16)
+    pyplt.grid()
+
+pyplt.tight_layout(rect=[0, 0.03, 1, 0.95])
+pyplt.show()
+```
