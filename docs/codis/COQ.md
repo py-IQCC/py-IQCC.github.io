@@ -11,7 +11,7 @@ parent: Codis
 
 El que es pot fer amb Python és graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
 
-$$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
+```math \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} ```
 
 Primer necessitem importal les següents llibreries (per a aquesta part en concret):
 
@@ -74,5 +74,114 @@ for n in range(1,4):
     pyplt.grid()
 
 pyplt.tight_layout(rect=[0, 0.03, 1, 0.95])
+pyplt.show()
+```
+
+D'aquesta manera, podem observar on trobarem un node d'aquesta funció i on està la major probabilitat de trobar la partícula en aquesta caixa unidimensional.
+
+## ***Caixa bidimensional***
+També es pot fer el mateix per una caixa bidimensional.
+
+Evidentment, l'equació a utilitzar canviarà:
+
+```math \psi_n(x,y)=\sqrt{\frac{2}{L_x}}\sqrt{\frac{2}{L_y}}\sin{\left(\frac{n\pi}{L_x}x\right)\sin{\left(\frac{n\pi}{L_y}y\right)}} ```
+
+Igual que amb l'exemple anterior, primer definirem algunes de les variables com $n$, $L_x$ i $L_y$.
+
+```js
+n = 1
+
+Lx = 1**-10
+Ly = 1**-10
+
+x,y = np.linspace(0, Lx, 200), np.linspace(0, Ly, 200)
+
+# Ax = np.sqrt(2/Lx)
+# Ay = np.sqrt(2/Ly)
+```
+
+Ara definim la funció:
+
+```js
+def psi_3d(a,b):
+  return np.sqrt(2/Lx)*np.sqrt(2/Ly)*np.sin(n*np.pi*a/Lx)*np.sin(n*np.pi*b/Ly)
+def psi2_3d(a,b):
+  return np.square(psi_3d(a,b))
+```
+
+I tornem a fer les gràfiques. Aquestes les podem fer per separat:
+
+```js
+X,Y = np.meshgrid(x,y)
+psi = np.array([psi_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
+PSI = psi.reshape(X.shape)
+
+fig = pyplt.figure(figsize=(8,6))
+ax = fig.add_subplot(111, projection = '3d')
+
+ax.plot_surface(X,Y,PSI, cmap = 'binary')
+# ax.plot_surface(X,Y,PSI, cmap = 'winter')
+# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4, alpha=0.25)
+# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4)
+# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4, linewidth=5)
+# ax.plot_wireframe(X,Y,PSI, rstride=4, cstride=4)
+pyplt.xlabel('Coordenades X')
+pyplt.ylabel('Coordenades Y')
+ax.set_zlabel("Funció d'ona")
+pyplt.title('$\psi$ per n=%s' %n)
+
+pyplt.show()
+```
+
+```js
+X,Y = np.meshgrid(x,y)
+psi2 = np.array([psi2_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
+PSI2 = psi2.reshape(X.shape)
+
+
+fig = pyplt.figure(figsize=(8,6))
+ax = fig.add_subplot(111, projection = '3d')
+
+ax.plot_surface(X,Y,PSI2, cmap = 'binary')
+# ax.plot_surface(X,Y,PSI2, cmap = 'winter')
+# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4, alpha=0.25)
+# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4)
+# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4, linewidth=5)
+# ax.plot_wireframe(X,Y,PSI2, rstride=4, cstride=4)
+pyplt.xlabel('Coordenades X')
+pyplt.ylabel('Coordenades Y')
+ax.set_zlabel("Funció d'ona")
+pyplt.title('$\psi^2$ per n=%s' %n)
+
+pyplt.show()
+```
+
+O bé o podem fer de manera conjunta:
+
+```js
+X,Y = np.meshgrid(x,y)
+
+psi = np.array([psi_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
+PSI = psi.reshape(X.shape)
+psi2 = np.array([psi2_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
+PSI2 = psi2.reshape(X.shape)
+
+fig = pyplt.figure(figsize=(15,6))
+ax1 = fig.add_subplot(121, projection = '3d')
+ax2 = fig.add_subplot(122, projection = '3d')
+
+ax1.plot_surface(X,Y,PSI, cmap = 'binary')
+ax1.set_xlabel('Coordenades X')
+ax1.set_ylabel('Coordenades Y')
+ax1.set_zlabel("Funció d'ona")
+ax1.set_title('$\psi$ per n=%s' %n)
+
+
+ax2.plot_surface(X,Y,PSI2, cmap = 'binary')
+ax2.set_xlabel('Coordenades X')
+ax2.set_ylabel('Coordenades Y')
+ax2.set_zlabel("Funció d'ona")
+ax2.set_title('$\psi^2$ per n=%s' %n)
+
 pyplt.show()
 ```
