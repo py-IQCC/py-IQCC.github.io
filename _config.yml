@@ -61,7 +61,7 @@ compress_html:
   
   
 # For copy button on code
-enable_copy_code_button: true
+enable_copy_code_button: false
 
 # To disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/),
 # comment out the `mermaid` and `version` keys below
