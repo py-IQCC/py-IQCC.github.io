@@ -1,6 +1,7 @@
 ---
 layout: default
 title: COQ
+parent: Codis
 ---
 
 # Complements de química
