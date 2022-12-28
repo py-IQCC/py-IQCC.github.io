@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Staff
-description: A listing of all the course staff members.
+title: Equip
+description: Membres del projecte PY-IQCC.
 ---
 
 # Equip
 
-Staff information is stored in the `_staffers` directory and rendered according to the layout file, `_layouts/staffer.html`.
+En aquesta secció podeu trobar informació dels components del projecte PY-IQCC.
 
 ## Professors
 
