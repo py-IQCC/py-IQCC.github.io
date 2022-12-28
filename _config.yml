@@ -87,3 +87,22 @@ footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distribuit per una <
 
 plugins:
   - jekyll-seo-tag
+
+color_scheme: dark
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: A tenir en compte
+    color: green
+  note:
+    title: Nota
+    color: purple
+  warning:
+    title: Perill
+    color: red
