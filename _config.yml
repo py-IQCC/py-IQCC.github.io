@@ -106,3 +106,6 @@ callouts:
   warning:
     title: Perill
     color: red
+
+kramdown:
+  math_engine: katex
