@@ -11,7 +11,7 @@ parent: Codis
 
 El que es pot fer amb Python és graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
 
-```math \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} ```
+$$\psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)}$$
 
 Primer necessitem importal les següents llibreries (per a aquesta part en concret):
 
