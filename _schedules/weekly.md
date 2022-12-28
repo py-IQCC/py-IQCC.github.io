@@ -20,7 +20,7 @@ timeline:
   - '5:30 PM'
 schedule:
   - name: Monday
-<!--     events:
+    events:
       - name: Lecture
         start: 9:30 AM
         end: 10:30 AM
@@ -32,10 +32,10 @@ schedule:
       - name: Office Hours
         start: 12:30 PM
         end: 2:00 PM
-        location: 271 Soda -->
+        location: 271 Soda
   - name: Tuesday
   - name: Wednesday
-<!--     events:
+    events:
       - name: Lecture
         start: 9:30 AM
         end: 10:30 AM
@@ -47,10 +47,10 @@ schedule:
       - name: Office Hours
         start: 12:30 PM
         end: 2:00 PM
-        location: 271 Soda -->
+        location: 271 Soda
   - name: Thursday
   - name: Friday
-<!--     events:
+    events:
       - name: Lecture
         start: 9:30 AM
         end: 10:30 AM
@@ -62,5 +62,5 @@ schedule:
       - name: Office Hours
         start: 12:30 PM
         end: 2:00 PM
-        location: 271 Soda -->
+        location: 271 Soda
 ---
