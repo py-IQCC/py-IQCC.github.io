@@ -41,10 +41,9 @@ def psi_2(n,L,x):
 ```
 
 I ara ja si, fem les gràfiques.
+
 {: .note }
 No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
-
->****Nota:*** No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
 
 ```js
 pyplt.figure(figsize=(15,10))
