@@ -1,21 +1,20 @@
 ---
 layout: home
-title: Just the Class
+title: Py-IQCC
 nav_exclude: true
 permalink: /:path/
 seo:
   type: Course
-  name: Just the Class
+  name: Py-IQCC
 ---
 
-# Just the Class
+# Py-IQCC
 
-Just the Class is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
+Aquesta és una pàgina web creada a través de GitHub Pages pel projecte Py-IQCC de la Universitat de Girona. Hi podràs trobar:
 
-- [announcements](announcements.md),
-- a [course calendar](calendar.md),
-- a [staff](staff.md) page,
-- and a weekly [schedule](schedule.md).
+- Informació del [projecte](about.md).
+- Una secció amb les [actualitzacions i esdeveniments](calendar.md).
+- Una pàgina de l'[equip](equip.md) que participa en el projecte.
 
 Just the Class is a template that extends the popular [Just the Docs](https://github.com/just-the-docs/just-the-docs) theme, which provides a robust and thoroughly-tested foundation for your website. Just the Docs include features such as:
 
