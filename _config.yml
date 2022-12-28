@@ -83,7 +83,7 @@ heading_anchors: true
 back_to_top: true
 back_to_top_text: "Inici de la pàgina"
 
-footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distribuit per una <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">llicència MIT.</a>"
 
 plugins:
   - jekyll-seo-tag
