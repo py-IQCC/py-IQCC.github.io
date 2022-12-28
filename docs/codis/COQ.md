@@ -15,7 +15,7 @@ $$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
 
 Primer necessitem importal les següents llibreries (per a aquesta part en concret):
 
-```yaml
+```js
 import matplotlib as plt
 import matplotlib.pyplot as pyplt
 %matplotlib inline
@@ -26,14 +26,14 @@ Un cop tenim importades les llibreries, ja posem començar a escriure el codi qu
 
 Primer caldrà determinal la llargada de la caixa unidimensional (***L***).
 
-```yaml
+```js
 L = 1         # Llargada de la caixa
 x_list = np.linspace(0,L,100)       # Aquest són els valors que necessitem per a poder fer les gràfiques
 ```
 
 Ara caldrà definir les funcions que volem graficar. Com volem veure la pròpia funció i el seu quadrat (funció probabilitat), caldrà definir-les per separat.
 
-```yaml
+```js
 def psi(n,L,x):
     return np.sqrt(2/L)*np.sin(n*np.pi*x/L)
 def psi_2(n,L,x):
@@ -44,7 +44,7 @@ I ara ja si, fem les gràfiques.
 
 >****Nota:*** No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
 
-```yaml
+```js
 pyplt.figure(figsize=(15,10))
 
 pyplt.suptitle("Funcions d'ona", fontsize=18)
