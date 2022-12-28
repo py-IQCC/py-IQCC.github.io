@@ -1,6 +1,6 @@
 ---
 name: Carles Alcaide
-role: Assistent
+role: Teaching Assistant
 email: carlesalcaideblaya@gmal.com
 <!-- website: https://kevinl.info
 photo: kevin.jpg -->
