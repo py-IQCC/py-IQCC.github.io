@@ -6,7 +6,7 @@ author: Carles Alcaide
 url: 'https://calcide.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 # exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
-logo: "/assets/images/iqcc2.jpg"
+logo: "/assets/images/iqcc2.png"
 favicon_ico: "/assets/images/iqcc.jpeg"
 
 # Theme settings
