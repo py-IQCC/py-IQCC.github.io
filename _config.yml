@@ -6,6 +6,9 @@ author: Carles Alcaide
 url: 'https://calcide.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 # exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
+logo: "/assets/images/iqcc2.jpg"
+favicon_ico: "/assets/images/iqcc.jpeg"
+
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.4.0.rc3
 color_scheme: light
