@@ -58,6 +58,32 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+  
+  
+# For copy button on code
+enable_copy_code_button: true
+
+# To disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/),
+# comment out the `mermaid` and `version` keys below
+# By default, consuming the theme as a gem leaves mermaid disabled; it is opt-in
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.6"
+  # Put any additional configuration, such as setting the theme, in _includes/mermaid_config.js
+  # See also docs/ui-components/code
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Footer content
+# appears at the bottom of every page's main content
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Inici de la pàgina"
+
+footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
 
 plugins:
   - jekyll-seo-tag
