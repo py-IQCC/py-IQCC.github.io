@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Calendar
+title: Calendari i terminis
 description: Listing of course modules and topics.
 ---
 
-# Calendar
+# Calendari i terminis
+
+Aquí es mostren els esdeveniments del projecte i les actualitzacions del projecte.
 
 {% for module in site.modules %}
 {{ module }}
