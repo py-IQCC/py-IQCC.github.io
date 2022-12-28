@@ -88,7 +88,7 @@ footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distribuit per una <
 plugins:
   - jekyll-seo-tag
 
-color_scheme: dark
+color_scheme: nil
 
 callouts_level: quiet # or loud
 callouts:
