@@ -2,6 +2,7 @@
 layout: default
 title: Complements de Química
 parent: Codis
+katex: True
 ---
 
 # **Complements de química**
@@ -187,3 +188,52 @@ ax2.set_title('$\psi^2$ per n=%s' %n)
 
 pyplt.show()
 ```
+
+## ***Sel·lecció automàtica***
+
+També es pot fer com una "mostra automàtica" de la funció d'ona i la seva funció de densitat de probabilitat.
+
+Primer cal importar les llibreries necessàries i definir la funció de la partícula en una caixa vist anteriorment:
+
+```js
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Defining the wavefunction
+def psi(x,n,L): return np.sqrt(2.0/L)*np.sin(float(n)*np.pi*x/L)
+```
+
+Ara cal saber per a quines característiques es vol graficar la funció. Això ho indicarà l'alumne:
+
+```js
+# Reading the input variables from the user
+n = int(input("Digues el valor del nombre quàntic principal: n = "))
+L = float(input("Digues la llargada de la caixa en Angstroms: L = "))
+```
+
+Amb les informacions que hem donat nosaltres de la funció i les caràcterístiques que volem que tingui aquesta funció, ja es poden fer les gràfiques.
+
+```js
+print('Caracerísitiques de la funció: n=%s; L=%s' %(n,L))
+
+# Funció d'ona
+plt.rcParams.update({'font.size': 18, 'font.family': 'STIXGeneral', 'mathtext.fontset': 'stix'})
+x = np.linspace(0, L, 900)
+fig, ax = plt.subplots()
+ax.plot(x, psi(x,n,L), linestyle='--', color="orange", linewidth=2.8)
+ax.hlines(0.0, 0.0, L, linewidth=1.8, linestyle='--', color="black")
+ax.set_xlabel(r'$L$')
+ax.set_ylabel(r'$\psi_n(x)$')
+plt.title("Funció d'ona")
+
+# Funció densitat de probabilitat
+fig, ax = plt.subplots()
+ax.axis([0.0,L,0.0,lim1*lim1*1.1])
+ax.plot(x, psi(x,n,L)*psi(x,n,L), linewidth=2.8)
+ax.set_xlabel(r'$L$')
+ax.set_ylabel(r'$|\psi_n|^2(x)$')
+plt.title("Funció densitat de probabilitat")
+
+plt.show()
+```
+
