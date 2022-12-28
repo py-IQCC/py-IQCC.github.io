@@ -9,4 +9,4 @@ has_children: true
 Aquí teniu tots els codis que hem elaborat.
 
 ## Continguts
-{: .no_toc .text-delta }
+{:.no_toc}
