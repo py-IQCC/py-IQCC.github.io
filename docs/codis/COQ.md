@@ -3,6 +3,7 @@ layout: default
 title: Complements de Química
 parent: Codis
 katex: True
+usemathjax: true
 ---
 
 # **Complements de química**
