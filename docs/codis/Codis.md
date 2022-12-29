@@ -8,3 +8,4 @@ has_children: true
 Aquí teniu tots els codis que hem elaborat.
 ## Continguts
 * [Complements de Química](COQ.md)
+* [Maths](math.md)
