@@ -1,4 +1,5 @@
 ---
+layout: default
 jupytext:
   text_representation:
     extension: .md
@@ -10,7 +11,6 @@ kernelspec:
 parent: Codis
 ---
 
-(myst-content/math)=
 # Math and equations
 
 Jupyter Book uses [MathJax](http://docs.mathjax.org/) for typesetting math in your HTML book build.
