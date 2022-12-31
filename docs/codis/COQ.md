@@ -88,7 +88,7 @@ Evidentment, l'equació a utilitzar canviarà:
 
 $$ \psi_n(x,y)=\sqrt{\frac{2}{L_x}}\sqrt{\frac{2}{L_y}}\sin{\left(\frac{n\pi}{L_x}x\right)\sin{\left(\frac{n\pi}{L_y}y\right)}} $$
 
-Igual que amb l'exemple anterior, primer definirem algunes de les variables com \\(n)\\, \\(L_x)\\ i \\(L_y)\\.
+Igual que amb l'exemple anterior, primer definirem algunes de les variables com \\(n\\), \\(L_x\\) i \\(L_y\\).
 
 ```js
 n = 1
