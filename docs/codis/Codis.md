@@ -10,10 +10,10 @@ Aquí teniu tots els codis que hem elaborat.
 * [Complements de Química](COQ.md) -->
 
 
-# Code
-{: .no_toc }
+# Codis
+{:.no_toc}
 
-## Table of contents
+## Continguts
 {: .no_toc .text-delta }
 
 1. TOC
