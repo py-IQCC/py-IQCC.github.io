@@ -4,7 +4,7 @@ title: Generació de gràfiques
 parent: Codis
 ---
 
-### **GRÀFIQUES A PYTHON**
+# **GRÀFIQUES A PYTHON**
 
 Primerament, importem el paquet que utilitzarem per fer les representacions gràfiques de les nostres dades, Matplotlib. Per raons de que sigui pràctic i per conveni d'altres programadors, s'abrevia amb plt. Si s'utilitza Jupyter notebook com a eina per córrer Python, només ficant la comanda ja s'ensenya el gràfic. Tot i això, en altres programes pot ser que calgui la comanda plt.show().
 ```js
@@ -272,3 +272,12 @@ Aquí teniu links que poden ser d'interés:
 2. Plantilles Matplotlib. [https://matplotlib.org/cheatsheets/](https://matplotlib.org/cheatsheets/)
 3. Referècia de colors del Matplotlib [https://matplotlib.org/stable/gallery/color/colormap_reference.html](https://matplotlib.org/stable/gallery/color/colormap_reference.html)
 4. Referències de marques del Matplotlib. [https://matplotlib.org/stable/api/markers_api.html](https://matplotlib.org/stable/api/markers_api.html)
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    // Make responsive
+    MathJax.Hub.Config({
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    });
+</script>
