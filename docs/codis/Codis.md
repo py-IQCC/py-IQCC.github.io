@@ -2,6 +2,7 @@
 layout: default
 title: Codis
 has_children: true
+permalink: /docs/codis
 ---
 
 <!-- # **Codis**
@@ -13,7 +14,9 @@ has_children: true
 1. TOC
 {:toc} -->
 
-## Continguts
+# Codis
+
+Aquí tenim els codis
 {: .fs-6 .fw-300 }
 
 ---
