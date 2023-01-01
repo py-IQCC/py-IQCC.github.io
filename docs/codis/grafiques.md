@@ -166,8 +166,8 @@ En aquest tipus de gràfics podem definir cada porció amb un color diferent. To
 
 ### **MULTIPLE PLOT**
 ```js
-err = np.random.normal(loc=0, scale=0.2, size=50) #definim l'error dels punts de la gràfica sinus
-err2 = np.random.normal(loc=0, scale=0.2, size=50) #definim l'amplada de les barres d'error
+err = np.random.normal(loc=0, scale=0.2, size=50) #definim el error dels punts de la gràfica sinus
+err2 = np.random.normal(loc=0, scale=0.2, size=50) #definim la amplada de les barres de error
 print(err)
 x = np.linspace(0,2*np.pi,50)
 print(x)
@@ -187,10 +187,10 @@ s = np.random.normal(mu, sigma, 1000) #distribució normal de valors aleatoris
 abs(mu - np.mean(s)) #comprovem la mitjana
 abs(sigma - np.std(s, ddof=1)) #comprovem la desviació
 
-count, bins, ignored = plt.hist(s, 30, density=True) #dibuixem l'histograma
+count, bins, ignored = plt.hist(s, 30, density=True) #dibuixem el histograma
 plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
                np.exp( - (bins - mu)**2 / (2 * sigma**2) ),
-         linewidth=2, color='r') #dibuixem la desviació d'una distribució normal
+         linewidth=2, color='r') #dibuixem la desviació de una distribució normal
 plt.show()
 ```
 
