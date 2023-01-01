@@ -12,7 +12,7 @@ import scipy
 ```
 Això és per nosaltres i ja esta, he generat un fitxer que equivaldria a dades experimentals que s'han d'ajustar a Michaelis-Menten.
 ```js
-#AIXÒ NO S'HA D'ENSNEYAR. ES PER GENERAR EL FITXER TXT
+#AIXÒ NO SE HA DE ENSNEYAR. ES PER GENERAR EL FITXER TXT
 rand = np.random.normal(0, 0.4, 30)
 conc = np.linspace(0, 100, 30)
 kmax = 22
@@ -80,7 +80,7 @@ resultats.close()
 ```js
 #Hi ha diferent maneres de llegir i escriure fitxers. La versió que ofereix Python és
 f = open("v0_conc.txt", "r")#La 'r' es correspon a 'read'. Hi ha més opcions, que ens permeten escriure fitxers així, si ho volem
-f.read() #D'aquesta manera podem llegir un fitxer i tota la seva informació la tenim guardada en una string. D'aquí hauríem de separar els valors en diferents arrays, si ho desitgéssim
+f.read() #De aquesta manera podem llegir un fitxer i tota la seva informació la tenim guardada en una string. De aquí hauríem de separar els valors en diferents arrays, si ho desitgéssim
 
 #Si ens interessa llegir dades (números), es recomana fer servir la funció de numpy:
 conc, v0 = np.loadtxt('v0_conc.txt', unpack=True, usecols=(0,1))
@@ -88,14 +88,14 @@ conc, v0 = np.loadtxt('v0_conc.txt', unpack=True, usecols=(0,1))
 #Representem els valors que hem carregat
 plt.scatter(conc, v0)
 
-#Ajustem a l'equacio de MichaelisMenten v0=vmax*c / (Km+c)
+#Ajustem a la equacio de MichaelisMenten v0=vmax*c / (Km+c)
 def MM(c, v, K):
   vel0 = v *c / (K+c)
   return vel0
 from scipy.optimize import curve_fit
 vmax, Km = scipy.optimize.curve_fit(MM, conc, v0)[0] #El valor [0] és per prendre els valors ajustats
 
-#Dibuixem l'ajust
+#Dibuixem el ajust
 plt.plot(conc, vmax*conc/(Km+conc))
 
 #Guardem els valors en un fitxer
