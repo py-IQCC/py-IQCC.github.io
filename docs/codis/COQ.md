@@ -9,6 +9,14 @@ usemathjax: true
 # **Complements de química**
 {: .no_toc }
 
+## Continguts
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
 ## ***Caixa unidimensional***
 
 El que es pot fer amb Python és graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
