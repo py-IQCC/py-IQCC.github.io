@@ -108,9 +108,6 @@ execute:
 
 # For copy button on code
 enable_copy_code_button: true
-extensions = [
-    "sphinx_copybutton",
-]
 
 # To disable support for mermaid diagrams (https://mermaid-js.github.io/mermaid/),
 # comment out the `mermaid` and `version` keys below
