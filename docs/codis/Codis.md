@@ -2,7 +2,6 @@
 layout: default
 title: Codis
 has_children: true
-permalink: /docs/codis
 ---
 
 <!-- # **Codis**
