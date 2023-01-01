@@ -9,6 +9,7 @@ kernelspec:
   language: python
   name: python3
 parent: Codis
+nav_exclude: true
 ---
 
 # Math and equations
