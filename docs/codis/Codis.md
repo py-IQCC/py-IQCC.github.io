@@ -2,6 +2,7 @@
 layout: default
 title: Codis
 has_children: true
+nav_exclude: true
 ---
 
 <!-- # **Codis**
@@ -15,7 +16,7 @@ has_children: true
 
 # Codis
 
-Aquí tenim els codis
-{: .fs-6 .fw-300 }
+Aquí teniu els codis
+<!-- {: .fs-6 .fw-300 } -->
 
 ---
