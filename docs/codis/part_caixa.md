@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Complements de Química
+title: Partícula en una caixa
 parent: Codis
 katex: True
 usemathjax: true
 ---
 
-# **Complements de química**
+# **Partícula en una caixa**
 {: .no_toc }
 
 ## Continguts
