@@ -4,7 +4,7 @@ title: Actualitzacions
 description: Listing of course modules and topics.
 ---
 
-# Actualitzacions
+# **Actualitzacions**
 
 Aquí es mostren les actualitzacions del projecte i la seva data de implementació.
 
