@@ -23,5 +23,5 @@ title: Actualitzacions generals del web
   : Carles Alcaide
 
 04/01/2023
-: Creació de l'apartat "Actualitzacions"]
+: Creació de l'apartat "Actualitzacions"
   : Carles Alcaide
