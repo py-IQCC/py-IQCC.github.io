@@ -4,7 +4,7 @@ title: Equip
 description: Membres del projecte PY-IQCC.
 ---
 
-# Equip
+# **Equip**
 
 En aquesta secció podeu trobar informació dels components del projecte PY-IQCC.
 
