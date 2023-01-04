@@ -5,7 +5,7 @@ description: >-
     Informacions del projecte.
 ---
 
-# Sobre el projecte
+# **Sobre el projecte**
 {:.no_toc}
 
 ## Continguts
