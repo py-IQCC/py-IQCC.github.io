@@ -15,7 +15,7 @@ Aquesta és una pàgina web creada a través de GitHub Pages pel projecte Py-IQC
 ## [El projecte](about.md)
 Aquest projecte tracta de crear un repositori on trobar diferents eines per l'estudi tansversal del grau de química: Aprenentatge Basat en Python (ABPy).
 
-## Actualitzacions
+## [Actualitzacions](actualitzacions.md)
 En aquest apartat s'aniran anunciant les diferents actualitzacions dels recursos de Python que es vagin fent i la seva data de implementació.
 
 ## [L'equip](equip.md)
