@@ -11,17 +11,17 @@ title: Actualitzacions generals del web
   : Carles Alcaide
 
 29/12/2022
-: Creació de l'apartat ["Equip"](calcide.github.io/equip.md)
+: Creació de l'apartat "Equip"
   : Carles Alcaide
 
 29/12/2022
-: Creació de l'apartat ["Sobre el projecte"](calcide.github.io/about.md)
+: Creació de l'apartat "Sobre el projecte"
   : Carles Alcaide
   
 30/12/2022
-: Creació de l'apartat ["Codis"](calcide.github.io/docs/codis/Codis.md)
+: Creació de l'apartat "Codis"
   : Carles Alcaide
 
 04/01/2023
-: Creació de l'apartat ["Actualitzacions"](calcide.github.io/actualitzacions.md)
+: Creació de l'apartat "Actualitzacions"]
   : Carles Alcaide
