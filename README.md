@@ -8,7 +8,7 @@ seo:
   name: Py-IQCC
 ---
 
-# Py-IQCC
+# **Py-IQCC**
 
 Aquesta és una pàgina web creada a través de GitHub Pages pel projecte Py-IQCC de la Universitat de Girona. Hi podràs trobar diferents seccions.
 
