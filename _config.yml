@@ -22,6 +22,9 @@ permalink: pretty
 #     - 'https://github.com/kevinlin1/just-the-class'
 # footer_content:
 
+html:
+  announcement: "⚠️Aquesta web està en construcció!⚠️"
+
 # Collections for website data
 collections:
   staffers:
