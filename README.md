@@ -21,5 +21,5 @@ En aquest apartat s'aniran anunciant les diferents actualitzacions dels recursos
 ## [L'equip](equip.md)
 Aquí trobareu a totes les persones que han contribuit en l'elaboració del projecte.
 
-## [Codis](Codis.md)
+## [Codis](docs/codis/Codis.md)
 Teniu disponibles tots els codis que elaborem. Casadcú d'ells serveix per una cosa diferent. Qualsevol incident que us trobeu amb els codis de Python, podeu comunicar-vos amb nosaltres a través del correu xxxxxx@udg.edu.
