@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Announcements
+title: Continguts
 nav_exclude: true
-description: A feed containing all of the class announcements.
+description: Continguts de tot el que tinguem.
 ---
 
-# Announcements
+# **Contingut**
 
-Announcements are stored in the `_announcements` directory and rendered according to the layout file, `_layouts/announcement.html`.
+Aquí separarem tot el quetinguem per no posar dues coses iguals.
 
 {% assign announcements = site.announcements | reverse %}
 {% for announcement in announcements %}
