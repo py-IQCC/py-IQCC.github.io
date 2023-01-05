@@ -5,7 +5,7 @@ nav_exclude: true
 description: Continguts de tot el que tinguem.
 ---
 
-# **Contingut**
+# **Continguts**
 
 Aquí separarem tot el quetinguem per no posar dues coses iguals.
 
