@@ -16,3 +16,8 @@ title: Actualitzacions dels codis
 : Implementació de l'apartat
 : "Partícula en una caixa"
   : Carles Alcaide
+
+05/01/2023
+: Implementació de l'apartat
+: "Graficar diagrames d’energia"
+  : Carles Alcaide
