@@ -1,7 +1,7 @@
 ---
 title: Gràfiques
-week: 
-date: 
+<!-- week: 
+date:  -->
 ---
 
 - Gràfiques vàries
