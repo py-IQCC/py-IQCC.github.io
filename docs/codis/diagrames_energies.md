@@ -82,7 +82,7 @@ Una altra manera de graficar aquests diagrames d'energia és utilitzant caixes d
 
 ```js
 diagram = ED()
-# Generem els diferents nivells d'energia
+# Generem els diferents nivells de energia
 diagram.add_level(0,'2pxy',top_text='')
 diagram.add_level(10,'$\sigma*$',top_text='')
 diagram.add_level(5,'$\pi*$','last',top_text='')
