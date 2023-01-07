@@ -86,6 +86,8 @@ for n in range(1,4):
 pyplt.tight_layout(rect=[0, 0.03, 1, 0.95])
 pyplt.show()
 ```
+[](https://raw.githubusercontent.com/py-IQCC/py-IQCC.github.io/assets/images/part_caixa/01.png)
+
 
 D'aquesta manera, podem observar on trobarem un node d'aquesta funció i on està la major probabilitat de trobar la partícula en aquesta caixa unidimensional.
 
@@ -105,9 +107,6 @@ Lx = 1**-10
 Ly = 1**-10
 
 x,y = np.linspace(0, Lx, 200), np.linspace(0, Ly, 200)
-
-# Ax = np.sqrt(2/Lx)
-# Ay = np.sqrt(2/Ly)
 ```
 
 Ara definim la funció:
@@ -130,11 +129,7 @@ fig = pyplt.figure(figsize=(8,6))
 ax = fig.add_subplot(111, projection = '3d')
 
 ax.plot_surface(X,Y,PSI, cmap = 'binary')
-# ax.plot_surface(X,Y,PSI, cmap = 'winter')
-# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4, alpha=0.25)
-# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4)
-# ax.plot_surface(X,Y,PSI, rstride=4, cstride=4, linewidth=5)
-# ax.plot_wireframe(X,Y,PSI, rstride=4, cstride=4)
+
 pyplt.xlabel('Coordenades X')
 pyplt.ylabel('Coordenades Y')
 ax.set_zlabel("Funció d'ona")
@@ -153,11 +148,7 @@ fig = pyplt.figure(figsize=(8,6))
 ax = fig.add_subplot(111, projection = '3d')
 
 ax.plot_surface(X,Y,PSI2, cmap = 'binary')
-# ax.plot_surface(X,Y,PSI2, cmap = 'winter')
-# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4, alpha=0.25)
-# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4)
-# ax.plot_surface(X,Y,PSI2, rstride=4, cstride=4, linewidth=5)
-# ax.plot_wireframe(X,Y,PSI2, rstride=4, cstride=4)
+
 pyplt.xlabel('Coordenades X')
 pyplt.ylabel('Coordenades Y')
 ax.set_zlabel("Funció d'ona")
@@ -206,24 +197,23 @@ Primer cal importar les llibreries necessàries i definir la funció de la part�
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Defining the wavefunction
 def psi(x,n,L): return np.sqrt(2.0/L)*np.sin(float(n)*np.pi*x/L)
 ```
 
 Ara cal saber per a quines característiques es vol graficar la funció. Això ho indicarà l'alumne:
 
 ```js
-# Reading the input variables from the user
 n = int(input("Digues el valor del nombre quàntic principal: n = "))
 L = float(input("Digues la llargada de la caixa en Angstroms: L = "))
 ```
 
 Amb les informacions que hem donat nosaltres de la funció i les caràcterístiques que volem que tingui aquesta funció, ja es poden fer les gràfiques.
+Per aquest exemple, farem que `n=2` i `L=10`.
 
 ```js
 print('Caracerísitiques de la funció: n=%s; L=%s' %(n,L))
 
-# Funció d'ona
+# Funció de ona
 plt.rcParams.update({'font.size': 18, 'font.family': 'STIXGeneral', 'mathtext.fontset': 'stix'})
 x = np.linspace(0, L, 900)
 fig, ax = plt.subplots()
