@@ -238,6 +238,7 @@ plt.title("Funció densitat de probabilitat")
 plt.show()
 ```
 ![05](../images/part_caixa/05.png)
+![06](../images/part_caixa/06.png)
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
