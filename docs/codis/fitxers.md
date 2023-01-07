@@ -12,7 +12,7 @@ import scipy
 ```
 El següent codi és només d'exemple. Serveix per generar un conjunt de dades, que en el vostre cas, serien les dades experimentals del laboratori. Com a exemple hem generat un fitxer que equivaldria a dades experimentals que s'han d'ajustar a l'equació de Michaelis-Menten.
 
-$$ v_o=\frac{v_{max}\cdot[S]}{k_{max}\cdot[S]} $$
+$$ v_o=\frac{v_{max}\cdot[S]}{k_{max}+[S]} $$
 
 ```js
 rand = np.random.normal(0, 0.4, 30)
