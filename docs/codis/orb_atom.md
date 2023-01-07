@@ -256,15 +256,6 @@ else:
 ```
 ![05](../images/orb_atom/05.png)
 
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-    // Make responsive
-    MathJax.Hub.Config({
-    "HTML-CSS": { linebreaks: { automatic: true } },
-    "SVG": { linebreaks: { automatic: true } },
-    });
-</script>
-
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     TeX: {
