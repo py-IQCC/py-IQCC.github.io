@@ -137,6 +137,7 @@ pyplt.title('$\psi$ per n=%s' %n)
 
 pyplt.show()
 ```
+![02](../images/part_caixa/02.png)
 
 ```js
 X,Y = np.meshgrid(x,y)
@@ -156,6 +157,7 @@ pyplt.title('$\psi^2$ per n=%s' %n)
 
 pyplt.show()
 ```
+![03](../images/part_caixa/03.png)
 
 O bé o podem fer de manera conjunta:
 
@@ -186,6 +188,8 @@ ax2.set_title('$\psi^2$ per n=%s' %n)
 
 pyplt.show()
 ```
+![04](../images/part_caixa/04.png)
+
 
 ## ***Sel·lecció automàtica***
 
@@ -233,6 +237,7 @@ plt.title("Funció densitat de probabilitat")
 
 plt.show()
 ```
+![05](../images/part_caixa/05.png)
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
