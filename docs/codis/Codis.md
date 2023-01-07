@@ -7,3 +7,4 @@ Aquí teniu els codis que deixem a la vostra disposició.
 - [Graficar diagrames d'energia](diagrames_energies.md)
 - [Generació de gràfiques](grafiques.md)
 - [Tractament de fitxers](fitxers.md)
+- [Gràfica d'orbitals atòmics](orb_atom.md)
