@@ -4,14 +4,6 @@ title: Orbitals atòmics
 parent: Codis
 katex: True
 usemathjax: true
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
 ---
 
 # **Orbitals atòmics**
@@ -38,7 +30,7 @@ Per a poder representar aquesta part radial, utilitzarem el que es coneix com a 
 
 Per poder-ho representar de manera més eficaç, utilitzarem el polinomi de Laguerre:
 
-$$R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r/n a_0} \Big( \frac{2r}{na_0}\Big)^l  \cdot L^{2l+1}_{n-l-1} \Big(\frac{2r}{n a_0} \Big)$$
+$$ R_{nl}(r) = \sqrt{\Big(\frac{2}{n a_0}\Big)^3 \frac{(n-l-1)!}{2n (n+l)!}} e^{-r/n a_0} \Big( \frac{2r}{na_0}\Big)^l  \cdot L^{2l+1}_{n-l-1} \Big(\frac{2r}{n a_0} \Big) $$
 
 > No entrarem en la explicació concreta de la formula.
 
@@ -140,7 +132,7 @@ Per a poder representar aquesta part radial, utilitzarem el que es coneix com a 
 
 Per poder-ho representar de manera més eficaç, utilitzarem el polinomi de Legendre:
 
-$$Y_{lm}(\theta,\phi) = \Theta_{lm}(\theta) \Phi_m (\phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!} } P_{lm}(cos \theta) \cdot e^{im\phi}$$
+$$ Y_{lm}(\theta,\phi) = \Theta_{lm}(\theta) \Phi_m (\phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!} } P_{lm}(cos \theta) \cdot e^{im\phi} $$
 
 > No entrarem en la explicació concreta de la formula.
 
