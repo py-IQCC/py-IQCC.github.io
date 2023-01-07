@@ -38,6 +38,7 @@ Un cop tenim les dades x i y que volem, és moment de representar-les. Per tal d
 plt.plot(x,y)
 plt.show()
 ```
+![01](../images/grafiques/01.png)
 Aquest és el vostre primer gràfic, enhorabona! Tot i això, no és gaire maco. Per modificar-lo, podem seguir amb alguns arguments com `marker`, `linestyle`, i `color`. L'argument `marker` representa el marcador que representa cadascuna de les dades que representem, `linestyle` representa la línia que uneix els punts i `color` representa el color amb el qual es representen les dades. Si a `linestyle` o a `marker` no hi ha cap paràmetre, no s'inclourà en el gràfic ni un a línia que uneixi els punts ni un marcador. A continuació us presentem alguns inputs que podeu ficar per modificar els gràfics com volgueu, però recordeu que al web https://matplotlib.org hi podeu trobar totes les opcions.
 
 **Taula 1** Marcadors comuns a Matplotlib
@@ -77,10 +78,13 @@ Per tal de ficar aquests arguments, la manera més fàcil és ficar-los tots com
 ```js
 plt.plot(x,y,'g.')
 plt.show()
-
+```
+![02](../images/grafiques/02.png)
+```js
 plt.plot(x,y,'p-.y')
 plt.show()
 ```
+![03](../images/grafiques/03.png)
 A més a més, podem superposar dos gràfics!
 ```js
 z = np.cos(x)
@@ -88,6 +92,7 @@ plt.plot(x,y,'b.')
 plt.plot(x,z,'r-')
 plt.show()
 ```
+![04](../images/grafiques/04.png)
 Tenint dos conjunts de dades, hem de saber diferenciar què representa cada punt del gràfic. Primerament, podem marcar quines son les dades que estem tractant, és a dir, ficant una **label** a cada variable. Tanmateix, podem posar tant títol a cadascun dels eixos (**plt.xlabel()** i **plt.ylabel()**) com títol general a la figura(**plt.title()**). Tenint en compte les labels que hem atorgat a les variables, podem fer una llegenda automàtica per saber què és el que s'està representant al gràfic (**plt.legend()**). Per últim, podem ficar una graella perquè algunes de les dades es vegin millor, amb la comanda **plt.grid(True)**. Ficant tota aquesta informació, el gràfic pot quedar així:
 ```js
 plt.plot(x,y,'b.', label='sin(x)')
@@ -99,6 +104,7 @@ plt.grid(True)
 plt.legend()
 plt.show()
 ```
+![05](../images/grafiques/05.png)
 Recordem que aquestes son només algunes de les moltes opcions que dona **Matplotlib** per caracteritzar un gràfic! N'hi ha de moltes més que estan descrites al web https://matplotlib.org. 
 
 
@@ -112,7 +118,9 @@ y = np.random.uniform(2,7,len(x))
 plt.xlabel('Números del zero al vuit')
 plt.ylabel('Valors aleatoris')
 plt.bar(x,y, color='green')
+plt.show()
 ```
+![06](../images/grafiques/06.png)
 En aquest cas hem definit valors aleatoris d'alçada compresos entre 2 i 7 i hem definit 8 punts. El fet de que siguin aleatoris fa que cada vegada que es compili el codi s'obtingui un resultat diferent.
 
 
@@ -132,6 +140,7 @@ ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
 
 plt.show()
 ```
+![07](../images/grafiques/07.png)
 En aquest cas, la comanda **ax.set()** fa que es defineixi millor el contacte de les barres verticals amb el terra del gràfic, és a dir, millora la posició dels punts del gràfic respecte els eixos. Podeu fer la prova de treure'l i veure com canvia el gràfic, és la millor forma d'aprendre! Es pot adaptar en la resta de gràfics, si s'escau, tot i que en aquest es nota més la diferència. També es poden treure els punts i més opcions de caracterització.
 
 
@@ -146,6 +155,7 @@ ax.set(xlim=(0, 8), xticks=np.arange(1, 8),
        ylim=(0, 56), yticks=np.linspace(0, 56, 9))
 plt.show()
 ```
+![08](../images/grafiques/08.png)
 En aquest cas, marquem els límits del gràfic perquè l'eix y arribi fins a 56 i l'eix x arribi a 8. També hem definit el color de la línia que separa les barres (negre) i el nombre de barres (bins) que tenim.
 
 
@@ -163,6 +173,7 @@ ax.set(xlim=(0, 8),
 
 plt.show()
 ```
+![09](../images/grafiques/09.png)
 En aquest tipus de gràfics podem definir cada porció amb un color diferent. Tot i això, per simplificar-nos la feina, **Matplotlib** té incorporades paletes de colors per ajudar-nos a escollir-los. És útil en gràfics en els quals el color pot aportar una informació (al següent gràfic es podrà veure més detalladament). Si fiquessim la comanda **frame=True** enlloc de **frame=False**, es veurien les línies del gràfic a sota i a l'esquerra. Per aquest gràfic no volem aquesta informació. A més, amb **ax.set** podem demanar que ens marqui les separacions de les línies del gràfic en cas de que en volguem.
 
 
@@ -170,14 +181,15 @@ En aquest tipus de gràfics podem definir cada porció amb un color diferent. To
 ```js
 err = np.random.normal(loc=0, scale=0.2, size=50) #definim el error dels punts de la gràfica sinus
 err2 = np.random.normal(loc=0, scale=0.2, size=50) #definim la amplada de les barres de error
-print(err)
+
 x = np.linspace(0,2*np.pi,50)
-print(x)
 y = np.sin(x)
+
 plt.plot(x,y)
-#plt.scatter(x,y+err2)
-plt.errorbar(x,y+err2,yerr=err, fmt='o'
+plt.errorbar(x,y+err2,yerr=err, fmt='o')
+plt.show()
 ```
+![10](../images/grafiques/10.png)
 En aquest exemple hem definit els errors com a valor aleatoris. En funció del tipus d'estudi que feu, tindreu ja definits els valors. La funció blava equival a la funció sinus sense modificar (el model teòric), els punts taronja equivaldrien als valors experimentals trobats i les barres d'error indicarien quant de lluny està el valor obtingut del valor teòric (en aquest cas, com que son valors aleatoris, no ho mostra).
 
 
@@ -195,6 +207,7 @@ plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
          linewidth=2, color='r') #dibuixem la desviació de una distribució normal
 plt.show()
 ```
+![11](../images/grafiques/11.png)
 
 ## **SCATTER PLOT**
 ```js
@@ -208,6 +221,7 @@ plt.colorbar()
 
 plt.show()
 ```
+![12](../images/grafiques/12.png)
 En aquest cas hem utilitzat un **cmap**, és a dir, una paleta de colors. A aquesta paleta se li poden assignar uns valors. Així doncs, cada punt de la gràfica donarà tres informacions: la de la posició x, la de la posició y i la de la intensitat del color respecte la barra de colors. Per a que es vegi a la figura, es pot utilitzar la comanda **plt.colorbar()**. Hi ha moltes paletes de colors diferents que es troben. La millor manera de trobar els colors més adients al treball és fer servir en una cel·la diferent la comanda **plt.colormaps()**, que ens donarà una llista de totes les opcions possibles, i a xafardejar! Si el que es vol és invertir l'ordre de les paletes (és a dir, que el color que per defecte marca el valor més baix sigui el que ara marca el valor més baix), caldrà afegir **_r** després de la paleta (per exemple, **cmap('Blues:r')**). Recordem també que no és estrictament necessari fer servir el colormap per aquest tipus de gràfic, sinó que amb la informació x i y dels punts ja és suficient per representar dades.
 
 
@@ -229,6 +243,7 @@ ax.set(xticklabels=[],
 
 plt.show()
 ```
+![13](../images/grafiques/13.png)
 Una altra aplicació útil de la representació de dades és la representació en 3D, que tot i que durant el grau de Química no s'utilitzi, és una molt bona eina de visualització dels resultats obtinguts. El funcionament és similar, definició de 3 variables X, Y i Z (o amb els noms que trobeu més adients) i **ax.plot_surface()** per dibuixar el gràfic.
 
 
@@ -250,10 +265,9 @@ cax = ax.scatter(i, j, k, l, s=50, c=c, cmap=cmhot)
 
 plt.colorbar(mappable=cax)
 
-# plt.legend(*cax.legend_elements(), bbox_to_anchor=(1.05, 1), loc=2)
-
 plt.show()
 ```
+![14](../images/grafiques/14.png)
 En aquest gràfic som capaços de representar quatre tipus de dades diferents. NO és recomenable fer-ho ja que pot costar d'entendre, just l'efecte contrari del que es vol amb una gràfica. Tot i això, us mostrem un exemple perquè pot ser que en algun moment ho feu servir, i si més no perquè veieu quantes coses es poden fer amb aquest paquet. Cada punt aporta una coordenada x, y i z que codifica un valor en concret. A més, la intensitat del color dona el quart valor a cada punt. Una altra manera de representar les intensitats de colors és com es mostra a la gràfica de dalt, donant un valor aproximat de cada valor a cada intensitat diferent.
 
 
@@ -273,6 +287,8 @@ plt.legend()
 plt.show()
 plt.savefig('sinus_vs_cosinus', format='png')
 ```
+![15](../images/grafiques/15.png)
+
 ## Per aprofundir
 Com ja s'ha anat comentant al llarg del document, la pàgina web del matplotlib
 és un lloc on poder buscar recursos i aprendre. Us animem a que busqueu més informació per vosaltres mateixos.
