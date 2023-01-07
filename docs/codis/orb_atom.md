@@ -40,9 +40,8 @@ A continuació us ensenyarem com poder fer gràfiques dels orbitals atòmics amb
 
 Per fer-ho, com sempre, el que primer hem de fer és importar i instal·lar aquestes llibreries que necessitem.
 
-```md
-# Commented out IPython magic to ensure Python compatibility.
-# %matplotlib inline
+```js
+%matplotlib inline
 import matplotlib.pyplot as plt
 
 from matplotlib import cm, colors
@@ -63,7 +62,7 @@ import ipyvolume as ipv
 
 Amb totes les llibreries que necessitem cridades, podem definir la nostra funció de la part radial.
 
-```md
+```js
 def psi_R(r,n=1,l=0):
     coeff = np.sqrt((2.0/n)**3 * spe.factorial(n-l-1) /(2.0*n*spe.factorial(n+l)))
     laguerre = spe.assoc_laguerre(2.0*r/n,n-l-1,2*l+1)
@@ -74,14 +73,14 @@ Ara caldrà definir quin orbital volem graficar. Per això, hem de donar un valo
 
 En aquest cas, dibuixem un orbital *p* amb nombre princial *5*.
 
-```md
+```js
 n = 4
 l = 1
 ```
 
 Definim les propietats que volem que tingui la nostra funció radial i el seu quadrat (densitat de probabilitat radial), i ja es pot graficar.
 
-```md
+```js
 r = np.linspace(0,100,1000)
 
 R = psi_R(r,n,l)
@@ -107,14 +106,14 @@ Una altra gràfica que podem fer amb la informació de la que ja disposem és la
 
 Treballem igual que les anterior. Primer definim els valors de $n$ i $l$.
 
-```md
+```js
 n=3
 l=1
 ```
 
 Ara definim la funció i la grafiquem, en aquest cas la funció de distribució radial per un orbital *p* amb *n=3*.
 
-```md
+```js
 r = np.linspace(0,250,10000)
 D = psi_R(r,n,l)**2 * (r**2)
 
@@ -141,7 +140,7 @@ $$Y_{lm}(\theta,\phi) = \Theta_{lm}(\theta) \Phi_m (\phi) = \sqrt{\frac{2l+1}{4\
 
 Definim la funció de la part angular, igual com hem fet abans amb la part radial.
 
-```md
+```js
 def psi_ang(phi,theta,l=0,m=0):
     sphHarm = spe.sph_harm(m,l,phi,theta)
     return sphHarm.real
@@ -149,14 +148,14 @@ def psi_ang(phi,theta,l=0,m=0):
 
 Ara definim l'orbital que volem graficar donant valors a **$l$** i **$m$** (nombre quàntic magnètic).
 
-```md
+```js
 l = 1
 m = 0
 ```
 
 Definida la funció, calculem els harmònics esfèrics $Y_{lm}(\phi,\theta)$ en els eixos $(\phi,\theta)$ i els convertim a coordenades Cartesianes.
 
-```md
+```js
 phi, theta = np.linspace(0, np.pi, 100), np.linspace(0, 2*np.pi, 100)
 phi, theta = np.meshgrid(phi, theta)
 
@@ -169,7 +168,7 @@ z = np.cos(phi) * abs(Ylm)
 
 Finalment només ens queda graficar aquest orbital.
 
-```md
+```js
 fig = plt.figure(figsize=(10,10))
 ax = fig.add_subplot(111, projection='3d')
 
@@ -201,14 +200,14 @@ Evidentment tots aquests espectes es poden modificar per obtenir el gràfic que 
 
 Tot el que acabem de beure fins ara són la part radial i angular de l'àtom d'hidrogen per separat, però tal com s'explica a l'assignatura de *Complements de Química*, per poder obtenir la funció completa de l'orbital atòmic, només cal multiplicar la part radial per la part angular que hem definit abans.
 
-```md
+```js
 def HFunc(r,theta,phi,n,l,m):
     return psi_R(r,n,l) * psi_ang(phi,theta,l,m)
 ```
 
 Aquí, simplement el que haurem de fer és donar els valors de $n$, $l$ i $m$ i el codi mateix ens ho graficarà.
 
-```md
+```js
 n=5
 l=2
 m=1
@@ -216,7 +215,7 @@ m=1
 
 $r$, $\theta$, $\phi$ ho calcula el mateix codi i per tant no cal donar-li més informació que els nombres quàntics per a poder observar els orbitals.
 
-```md
+```js
 if n > 9:
   print('El valor de n no pot ser superior a 9')
 else:
