@@ -12,10 +12,6 @@ kernelspec:
   display_name: Python 3
   language: python
   name: python3
-  
-{% if page.use_math %}
-{% include mathjax_support.html %}
-{% endif %}
 ---
 
 # **Orbitals atòmics**
