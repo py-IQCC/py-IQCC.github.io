@@ -86,7 +86,7 @@ for n in range(1,4):
 pyplt.tight_layout(rect=[0, 0.03, 1, 0.95])
 pyplt.show()
 ```
-![01](py-IQCC.github.io/assets/images/part_caixa/01.png)
+![01](../images/part_caixa/01.png)
 
 
 D'aquesta manera, podem observar on trobarem un node d'aquesta funció i on està la major probabilitat de trobar la partícula en aquesta caixa unidimensional.
