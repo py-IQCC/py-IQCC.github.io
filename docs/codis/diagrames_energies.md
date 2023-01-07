@@ -46,6 +46,7 @@ diagram.add_level(20,'mCARBX','l')
 
 diagram.plot(show_IDs=True)
 ```
+![01](../images/diagram_energy/01.png)
 
 Aquest tall de codi el que fa és generar-nos un diagrama d'energia molt senzill on només es mostres els nivells energètics que li hem especificat. La comanda `diagram.add_level()` és el que genera el nivell energètic. Dins les parèntesi és on especifiquem com volem que sigui auqest nivell segons `diagram.add_level(energia, nom, 'last/l' si va al mateix lloc que l'anterior, color = 'green/blue/black/red...')`. Per exemple, quan nosaltres especifiquem la comanda `diagram.add_level(28.5,'mTS1',color='g')` vol dir que afegim un nivell d'energia 28.5 amb l'etiqueta "mTS1" i de color verd (green) o si diem `diagram.add_level(-15.6,'mlC2','l',)` el nivell té una energia de -15.6 amb l'etiqueta "mlC2" i està a la mateixa posició que el nivell anterior (l).
 La comanda `diagram.plot(show_IDs=True)` serveix pergraficar allò que hem dit. El `show_IDs=True` és per veure quin número de nivell és cadascú, però si no ho volem veure, podem canviar el `True` per un`False` i ja està, o simplement es pot esborrar. Per les unitats, en el diagrama per defecte apareixerà `kcal/mol^-1`. En la següent explicació veurem com canviar això.
@@ -65,6 +66,7 @@ diagram.add_link(0,6, color = 'red')
 
 diagram.plot()
 ```
+![02](../images/diagram_energy/02.png)
 
 La comanda `diagram.add_link()` afegeix aquestes línies i entre parèntesi és on especifiquem quins nivells energètics unim. Evidentment, també podem afegir colors dient `color = 'red/green/black...'` igual que abans amb els nivells energètics.
 
@@ -73,6 +75,7 @@ Abans s'ha dit que podem canviar les unitat d'energia. Doncs bé, això es pot f
 ```js
 diagram.plot(ylabel="Energy  ($kJ/mol$)")
 ```
+![03](../images/diagram_energy/03.png)
 
 Els canvis que fem, queden superposats a tot el que hem fet abans, per tant si tornem a dibuixar el grafic, es veuran els canvis.
 
@@ -106,6 +109,7 @@ diagram.offset *= 1.5
 diagram.plot(show_IDs=True)
 plt.show()
 ```
+![04](../images/diagram_energy/04.png)
 
 Els canvis que podem modificar en aquest tipus de diagrames són els mateixos que en el gràfic energètic anterior.
 
