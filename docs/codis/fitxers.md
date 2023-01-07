@@ -10,9 +10,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy
 ```
-Això és per nosaltres i ja esta, he generat un fitxer que equivaldria a dades experimentals que s'han d'ajustar a Michaelis-Menten.
+El següent codi és només d'exemple. Serveix per generar un conjunt de dades, que en el vostre cas, serien les dades experimentals del laboratori. Com a exemple hem generat un fitxer que equivaldria a dades experimentals que s'han d'ajustar a l'equació de Michaelis-Menten.
+
+$$ v_o=\frac{v_{max}\cdot[S]}{k_{max}\cdot[S]} $$
+
 ```js
-#AIXÒ NO SE HA DE ENSNEYAR. ES PER GENERAR EL FITXER TXT
 rand = np.random.normal(0, 0.4, 30)
 conc = np.linspace(0, 100, 30)
 kmax = 22
@@ -21,10 +23,11 @@ v0 = vmax*conc/(kmax + conc)
 plt.scatter(conc, v0+rand)
 np.savetxt('v0_conc.txt', (np.array([conc, v0+rand]).T))
 ```
+![01](../images/tract_fitx/01.png)
+
 ### **CÀRREGA DE LES DADES**
 El primer pas és carregar les dades que tenim d'un fitxer .txt, .csv o qualsevol altre fitxer de dades. En cas de tenir les dades en un fitxer d'Excel, cal passar-les primer a .csv o .txt. Si treballem amb Google Colab, cal carregar aquest fitxer a la finestra de l'esquerra. Per a aquest exemple, hem carregat v0_conc.txt, que té valors de v0 i de concentració d'una simulació de dades experimentals que segueixen l'equació de Michaelis-Menten. Hi ha dues maneres d'importar el fitxer: amb la versió que ofereix Python o amb la funció que aporta el paquet **Numpy**:
 ```js
-# Versió Python
 f = open("v0_conc.txt", "r")
 f.read()
 ```
@@ -49,7 +52,10 @@ Amb aquesta funció definim directament les variables *conc* i *v0*. Diem que ag
 Per visualitzar-ho millor, representem les variables *conc* i *v0*. Com que són dades experimentals, el gràfic més adient és un scatter plot.
 ```js
 plt.scatter(conc, v0)
+plt.show()
 ```
+![02](../images/tract_fitx/02.png)
+
 El següent pas és el tractament de les dades a partir de les llistes que hem originat des del fitxer. En aquest cas, el tractament serà ajustar els valors a l'equació de Michaelis-Menten.
 ```js
 def MM(c, v, K):
@@ -67,6 +73,8 @@ plt.scatter(conc, v0)
 plt.plot(conc, vmax*conc/(Km+conc), 'r')
 plt.show()
 ```
+![03](../images/tract_fitx/03.png)
+
 Un cop hem fet el tractament de les dades, és el moment de crear un fitxer a on guardar les dades. La comanda que fem servir és open(), que és una funció per defecte de Python. El primer terme és el nom del fitxer que li voldrem ficar (ha de ser .txt), mentre que el segon terme 'w+' vol dir write (w) i sobreescriure (+). A partir d'aqui, amb el codi **resultats.write()** anirem escrivint les línies al fitxer. Per fer un salt de línia escriurem \n. Per escriure un valor dels que haguem obtingut, farem servir %.3f, on *%* és per dir que aquí s'ha de posar el valor, *.3* son els decimals que volem ficar-hi i *f* és per indicar que és un float (número amb decimals). Un cop hem escrit tot el que volíem, la comanda **resultats.close()** fa que finalitzi aquesta comanda. El fitxer s'haurà generat al mateix lloc on és el codi: si es treballa des de Colab, s'haurà generat a la finestra de l'esquerra.
 ```js
 resultats = open('resultats.txt', 'w+')
@@ -77,32 +85,11 @@ resultats.write("Si ho volem escriure tot en una sola línia seria:\n vmax= %.3f
 resultats.close()
 ```
 
-```js
-#Hi ha diferent maneres de llegir i escriure fitxers. La versió que ofereix Python és
-f = open("v0_conc.txt", "r")#La 'r' es correspon a 'read'. Hi ha més opcions, que ens permeten escriure fitxers així, si ho volem
-f.read() #De aquesta manera podem llegir un fitxer i tota la seva informació la tenim guardada en una string. De aquí hauríem de separar els valors en diferents arrays, si ho desitgéssim
-
-#Si ens interessa llegir dades (números), es recomana fer servir la funció de numpy:
-conc, v0 = np.loadtxt('v0_conc.txt', unpack=True, usecols=(0,1))
-
-#Representem els valors que hem carregat
-plt.scatter(conc, v0)
-
-#Ajustem a la equacio de MichaelisMenten v0=vmax*c / (Km+c)
-def MM(c, v, K):
-  vel0 = v *c / (K+c)
-  return vel0
-from scipy.optimize import curve_fit
-vmax, Km = scipy.optimize.curve_fit(MM, conc, v0)[0] #El valor [0] és per prendre els valors ajustats
-
-#Dibuixem el ajust
-plt.plot(conc, vmax*conc/(Km+conc))
-
-#Guardem els valors en un fitxer
-resultats = open('resultats.txt', 'w+')
-resultats.write("L'equació de Michaelis-Menten és v0=vmax*c/(Km+c).\nEls valors que hem obtingut són:")
-resultats.write("vmax = %.3f" %(vmax))
-resultats.write("Kmax = %.3f\n" %(Km))
-resultats.write("Si ho volem escriure tot en una sola línia seria:\n vmax= %.3f   Kmax = %.3f" % (vmax, Km))
-resultats.close()
-```
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    // Make responsive
+    MathJax.Hub.Config({
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    });
+</script>
