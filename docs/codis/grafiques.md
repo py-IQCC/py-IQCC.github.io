@@ -19,7 +19,9 @@ Primerament, importem el paquet que utilitzarem per fer les representacions grà
 import matplotlib.pyplot as plt
 ```
 Per tal de córrer un gràfic cal tenir unes coordenades a dibuixar. En aquest cas, tindrem en compte la funció d'ona d'un orbital 3s de l'àtom d'hidrogen en base a la seva distància **r** (en *Bohrs*). Definirem una funció **f(r)** i diferents valors de radi entre 1 i 150. També calcularem el valor de f(r) per a cada r que hem definit. Per les constants i operacions matemàtiques s'utilitzarà el paquet **math**:
+
 $$ y=sin(x) $$
+
 ```js
 import math
 import numpy as np
