@@ -25,8 +25,6 @@ kernelspec:
 
 ---
 
-# **Visualitzacions dels orbitals d'un àtom d'hidrogen**
-
 ## **Context**
 
 Abans de fer cap tipus de gràfic, primerament explicarem quines condicions s'han tingut en compte per a poder fer aquests gràfics que veureu més endavant:
