@@ -21,3 +21,8 @@ title: Actualitzacions dels codis
 : Implementació de l'apartat
 : "Graficar diagrames d’energia"
   : Carles Alcaide
+
+16/01/2023
+: Implementació de l'apartat
+: "	Generació de taules"
+  : Carles Alcaide
