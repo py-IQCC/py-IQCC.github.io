@@ -77,7 +77,7 @@ elements.loc['IE', 'Li']
 
 Ara que podeu generar DataFrames, és útil poder modificar-los mentre netegeu les vostres dades o feu càlculs. Això es pot fer mitjançant mètodes com l'assignació, eliminant files i columnes o combinar DataFrames.
 
-### ** Inserció de columnes mitjançant l'assignació **
+### **Inserció de columnes mitjançant l'assignació**
 
 Possiblement, el mètode més senzill per afegir una columna nova és mitjançant l'assignació. Si es crida una columna inexistent i se li assignen valors, en lloc de retornar un error, pandas crea una nova columna amb el nom donat i l'omple amb les dades. Per exemple, el Dataframe _elements_ no conté una columna de carboni, de manera que la columna s'afegeix quan s'assigna a una sèrie amb les dades.
 
@@ -215,6 +215,6 @@ pd.merge(group1, group2, on='metall')
 
 Per obtenir més recursos sobre la biblioteca pandas, consulteu el següent. No es pot subratllar prou el valor del lloc web de pandas, ja que conté una gran quantitat de documentació d'alta qualitat i exemples il·lustratius sobre l'ús de pandas per a l'anàlisi i el processament de dades.
 
-1. Web del Pandas. http://pandas.pydata.org/
-2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. A free, online version is available by the author at https://github.com/jakevdp/PythonDataScienceHandbook
+1. Web del Pandas. [](http://pandas.pydata.org/)
+2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. Una versió gratuita de l'autor està disponible a [](https://github.com/jakevdp/PythonDataScienceHandbook)
 3. McKinney, W. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and Ipython, 2nd ed.; O’Reilly: Sebastopol, CA, 2018.
