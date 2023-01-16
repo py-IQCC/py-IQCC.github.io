@@ -24,5 +24,5 @@ title: Actualitzacions dels codis
 
 16/01/2023
 : Implementació de l'apartat
-: "	Generació de taules"
+: "	Generació i edició de taules"
   : Carles Alcaide
