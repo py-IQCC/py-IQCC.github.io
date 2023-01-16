@@ -15,7 +15,7 @@ parent: Codis
 
 ---
 
-## ** Crear un *Dataframe* **
+## **Crear un _Dataframe_**
 
 La majoria de les dades amb les quals us trobareu treballant es col·locaran millor en un objecte pandas bidimensional anomenat *DataFrame* que sempre s'escriu amb dues lletres majúscules. El DataFrame és similar a una sèrie, excepte que ara també hi ha columnes amb noms. Es pot accedir a les columnes mitjançant noms de columnes i a les files es pot accedir mitjançant índexs.
 El que primer haurem defer, com tots els codis, és importar els paquets i llibreries necessàries per a poder treballar. En aquest cas, nomésnecessitarem la llibreria *Pandas*.
@@ -73,7 +73,7 @@ Alternativament, podem utilitzar el DataFrame directament i indexar-lo amb el m�
 elements.loc['IE', 'Li']
 ```
 
-## ** Modificar un *Dataframe* **
+## **Modificar un _Dataframe_**
 
 Ara que podeu generar DataFrames, és útil poder modificar-los mentre netegeu les vostres dades o feu càlculs. Això es pot fer mitjançant mètodes com l'assignació, eliminant files i columnes o combinar DataFrames.
 
@@ -87,7 +87,7 @@ elements['C'] = ['carboni', 6, 12.01, 11.3]
 elements
 ```
 
-### ** Assignament automàtic **
+### **Assignament automàtic**
 
 Una altra característica important dels pandas és la capacitat d'alinear automàticament les dades en funció de les etiquetes. A l'exemple anterior, el carboni s'afegeix al DataFrame amb el nom, el nombre atòmic, la massa atòmica i l'energia d'ionització en el mateix ordre que al DataFrame. Què passa si les dades noves no estan en l'ordre correcte? Si cada valor està etiquetat, pandas s'encarregaran de col·locar-los a la ubicació correcta.
 
@@ -106,7 +106,7 @@ elements
 
 La nova columna de dades de nitrogen s'ha afegit als elements amb totes les dades que resideixen a la fila correcta.
 
-### ** Eliminar columnes **
+### **Eliminar columnes**
 
 En netejar les dades, potser voldreu eliminar una columna o una fila. Pandas proporciona el mètode _drop()_ per a aquest propòsit. Requereix que s'elimini el nom de la columna o fila i, per defecte, suposa que s'ha d'eliminar una fila, `axis=0`. Si voleu eliminar una columna, canvieu l'eix utilitzant l'argument `axis=1`.
 A l'exemple següent, primer s'elimina la columna d'hidrogen del DataFrame.
@@ -123,7 +123,7 @@ En el segon exemple anterior, l'hidrogen ha tornat tot i haver-se eliminat prèv
 
 Hi ha una funció similar `pd.dropna()` que elimina columnes o files d'un DataFrame que contenen valors _NaN_. Això s'utilitza habitualment per eliminar dades incompletes d'un conjunt de dades. La funció _pd.dropna()_ es comporta de manera molt semblant a la funció _pd.drop()_ incloent els arguments `inplace=` i `axis=`.
 
-### ** Unir dos Dataframes **
+### **Unir dos Dataframes**
 
 Per combinar diversos DataFrames, pandas proporciona un mètode _merge()_. De manera similar a l'anterior, la funció _merge()_ alinearà les dades correctament, però com que els DataFrames tenen diverses columnes i valors d'índex per triar, la funció _merge()_ pot alinear les dades en funció de qualsevol d'aquests valors. El comportament predeterminat de _merge()_ és comprovar si hi ha columnes comunes entre els dos DataFrames i alinear les dades en funció d'aquestes columnes.
 Com a exemple, a continuació hi ha dos DataFrames que contenen dades de diversos compostos químics.
@@ -178,7 +178,7 @@ comps3.drop('metall', axis=1, inplace=True)
 comps3
 ```
 
-### ** Concatenació **
+### **Concatenació**
 
 La concatenació és el procés d'unir dos DataFrames al llarg d'un eix determinat. Això és diferent del mètode _merge()_ anterior, ja que _merge()_ fusiona i alinea les dades comunes entre els dos DataFrames mentre que _pd.concat()_ afegeix cegament un DataFrame a un altre.
 Com a exemple, imagineu que dos grups de laboratori mesuren les densitats de magnesi, alumini, titani i ferro i carreguen els seus resultats a DataFrames a continuació.
@@ -215,6 +215,6 @@ pd.merge(group1, group2, on='metall')
 
 Per obtenir més recursos sobre la biblioteca pandas, consulteu el següent. No es pot subratllar prou el valor del lloc web de pandas, ja que conté una gran quantitat de documentació d'alta qualitat i exemples il·lustratius sobre l'ús de pandas per a l'anàlisi i el processament de dades.
 
-1. Pandas Website. (http://pandas.pydata.org/) (free resource)
-2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. A free, online version is available by the author at (https://github.com/jakevdp/PythonDataScienceHandbook) (free resource)
+1. Web del Pandas. http://pandas.pydata.org/
+2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. A free, online version is available by the author at https://github.com/jakevdp/PythonDataScienceHandbook
 3. McKinney, W. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and Ipython, 2nd ed.; O’Reilly: Sebastopol, CA, 2018.
