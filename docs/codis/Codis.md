@@ -8,3 +8,4 @@ Aquí teniu els codis que deixem a la vostra disposició.
 - [Generació de gràfiques](grafiques.md)
 - [Tractament de fitxers](fitxers.md)
 - [Gràfica d'orbitals atòmics](orb_atom.md)
+- [Generació i edició de taules](taules.md)
