@@ -216,5 +216,5 @@ pd.merge(group1, group2, on='metall')
 Per obtenir més recursos sobre la biblioteca pandas, consulteu el següent. No es pot subratllar prou el valor del lloc web de pandas, ja que conté una gran quantitat de documentació d'alta qualitat i exemples il·lustratius sobre l'ús de pandas per a l'anàlisi i el processament de dades.
 
 1. Web del [Pandas](http://pandas.pydata.org/).
-2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. Una versió gratuita de l'autor està disponible a [Github](https://github.com/jakevdp/PythonDataScienceHandbook)
+2. VanderPlas, J. Python data Science Handbook: Essential Tools for Working with Data, 1st ed.; O’Reilly: Sebastopol, CA, 2017, chapter 3. Una versió gratuita de l'autor està disponible a [Github](https://github.com/jakevdp/PythonDataScienceHandbook).
 3. McKinney, W. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and Ipython, 2nd ed.; O’Reilly: Sebastopol, CA, 2018.
