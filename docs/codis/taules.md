@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Generació de taules
+title: Generació i edició de taules
 parent: Codis
 ---
 
-# **Generació de taules**
+# **Generació i edició de taules**
 {: .no_toc }
 
 ## Continguts
