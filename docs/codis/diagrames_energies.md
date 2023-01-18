@@ -20,22 +20,22 @@ usemathjax: true
 Exiteix un llibreria per a poder fer gràfiques d'orbitals moleculars.
 Per importar-lo, caldrà primer instal·lar-lo.
 
-```js
+```python{% raw %}
 !pip install git+https://github.com/giacomomarchioro/PyEnergyDiagrams
-```
+{% endraw %}```
 ## **Diagrames energètics**
 
 Ara que ja està instal·lat, podrem començar a crear els primers diagrames energètics. Necessitarem les següents llibreries:
 
-```js
+```python{% raw %}
 import matplotlib.pyplot as plt
 %matplotlib inline
 from energydiagram import ED
-```
+{% endraw %}```
 
 Ara ja sí, podem donar les intruccions per a que ens grafiqui el que nosaltres volem. Primer i abans de res, li donarem la comanda `diagram = ED()` per fer les coses més fàcils. Seguidament escriurem les següents comandes:
 
-```js
+```python{% raw %}
 diagram.add_level(0,'Separated\nReactants')
 diagram.add_level(-5.4,'mlC1')
 diagram.add_level(-15.6,'mlC2','l',)
@@ -45,7 +45,7 @@ diagram.add_level(-19.8,'mCARB2','l')
 diagram.add_level(20,'mCARBX','l')
 
 diagram.plot(show_IDs=True)
-```
+{% endraw %}```
 ![01](../images/diagram_energy/01.png)
 
 Aquest tall de codi el que fa és generar-nos un diagrama d'energia molt senzill on només es mostres els nivells energètics que li hem especificat. La comanda `diagram.add_level()` és el que genera el nivell energètic. Dins les parèntesi és on especifiquem com volem que sigui auqest nivell segons `diagram.add_level(energia, nom, 'last/l' si va al mateix lloc que l'anterior, color = 'green/blue/black/red...')`. Per exemple, quan nosaltres especifiquem la comanda `diagram.add_level(28.5,'mTS1',color='g')` vol dir que afegim un nivell d'energia 28.5 amb l'etiqueta "mTS1" i de color verd (green) o si diem `diagram.add_level(-15.6,'mlC2','l',)` el nivell té una energia de -15.6 amb l'etiqueta "mlC2" i està a la mateixa posició que el nivell anterior (l).
@@ -55,7 +55,7 @@ Aquest diagrama que acabem de dibuixar està bé, però li faltes les línies qu
 
 Per fer-ho, podem afegir al codi anterior, les següents instruccions:
 
-```js
+```python{% raw %}
 diagram.add_link(0,1)
 diagram.add_link(0,2)
 diagram.add_link(2,3)
@@ -65,16 +65,16 @@ diagram.add_link(3,5)
 diagram.add_link(0,6, color = 'red')
 
 diagram.plot()
-```
+{% endraw %}```
 ![02](../images/diagram_energy/02.png)
 
 La comanda `diagram.add_link()` afegeix aquestes línies i entre parèntesi és on especifiquem quins nivells energètics unim. Evidentment, també podem afegir colors dient `color = 'red/green/black...'` igual que abans amb els nivells energètics.
 
 Abans s'ha dit que podem canviar les unitat d'energia. Doncs bé, això es pot fer modificant el `diagram.plot()` per
 
-```js
+```python{% raw %}
 diagram.plot(ylabel="Energy  ($kJ/mol$)")
-```
+{% endraw %}```
 ![03](../images/diagram_energy/03.png)
 
 Els canvis que fem, queden superposats a tot el que hem fet abans, per tant si tornem a dibuixar el grafic, es veuran els canvis.
@@ -83,7 +83,7 @@ Els canvis que fem, queden superposats a tot el que hem fet abans, per tant si t
 
 Una altra manera de graficar aquests diagrames d'energia és utilitzant caixes d'electrons. Es poden crear diagrames d'orbitals moleculars (MO) i orbitals atòmics (AO).
 
-```js
+```python{% raw %}
 diagram = ED()
 # Generem els diferents nivells de energia
 diagram.add_level(0,'2pxy',top_text='')
@@ -108,7 +108,7 @@ diagram.add_electronbox(5,3,5,1.5,3)
 diagram.offset *= 1.5
 diagram.plot(show_IDs=True)
 plt.show()
-```
+{% endraw %}```
 ![04](../images/diagram_energy/04.png)
 
 Els canvis que podem modificar en aquest tipus de diagrames són els mateixos que en el gràfic energètic anterior.
