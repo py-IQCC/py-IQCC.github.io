@@ -3,10 +3,10 @@ title: Py-IQCC
 description: Pàgina web del projecte Py-IQCC
 author: Carles Alcaide
 # baseurl: '/just-the-class' # the subpath of your site, e.g. /blog
-url: 'https://calcide.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://py-iqcc.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 # exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
-logo: "/assets/images/iqcc2.png"
+logo: "/assets/images/py-iqcc_gran.png"
 favicon_ico: "/assets/images/iqcc.jpeg"
 
 # Theme settings
