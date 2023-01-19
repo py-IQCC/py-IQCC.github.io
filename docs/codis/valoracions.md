@@ -129,6 +129,9 @@ plt.show()
 
 El gràfic es pot modificar de la manera que vulguem amb tot el que s'explica a l'apartat de [generació de gràfiques](grafiques.md).
 
+### Per aprofundir
+
+Podeu visitar el [repositori del paquet](https://github.com/rnelsonchem/pHcalc) si voleu saber més coses que es poden fer amb `pHcalc`.
 
 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
