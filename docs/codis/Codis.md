@@ -12,7 +12,7 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 - Material Sergei (modelatge d'una reacció cinètica, com graficar-ho, fer gif?)
 
 ## **QUÍMICA ANALÍTICA**
-- Valoracions àcid-base
+- [Valoracions àcid-base](valoracions.md)
 
 ## **BIOCOSES**
 - Preguntem que fan els de bio/ambientals (COMPBIOLAB)
