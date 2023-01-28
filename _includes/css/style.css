@@ -1,13 +1,13 @@
 body {
-  color: violet;
 }
 
 button {
 	position: absolute; top: 4px; right: 4px;
 	color: rgb(130,70,130);
 	background-color: rgb(220,220,220);
-	width: 2.5em;
-	height: 2.5em;
+  opacity: 0.8;
+	width: 2em;
+	height: 2em;
 	border-radius: 5px;
 	padding: 0.2em;
 	vertical-align: top;
