@@ -6,7 +6,7 @@ katex: True
 usemathjax: true
 ---
 
-
+<style>{% include css/copy.css %}</style>
 <style>{% include css/style.css %}</style>
 
 # **Partícula en una caixa**
