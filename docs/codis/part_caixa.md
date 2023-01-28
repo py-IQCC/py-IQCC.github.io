@@ -6,6 +6,8 @@ katex: True
 usemathjax: true
 ---
 
+<style>{% include css/style.css %}</style>
+
 # **Partícula en una caixa**
 {: .no_toc }
 
@@ -25,7 +27,7 @@ $$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
 
 Primer necessitem importal les següents llibreries (per a aquesta part en concret):
 
-```js
+```py
 import matplotlib as plt
 import matplotlib.pyplot as pyplt
 %matplotlib inline
@@ -36,14 +38,14 @@ Un cop tenim importades les llibreries, ja posem començar a escriure el codi qu
 
 Primer caldrà determinal la llargada de la caixa unidimensional (***L***).
 
-```js
+```py
 L = 1         # Llargada de la caixa
 x_list = np.linspace(0,L,100)       # Aquest són els valors que necessitem per a poder fer les gràfiques
 ```
 
 Ara caldrà definir les funcions que volem graficar. Com volem veure la pròpia funció i el seu quadrat (funció probabilitat), caldrà definir-les per separat.
 
-```js
+```py
 def psi(n,L,x):
     return np.sqrt(2/L)*np.sin(n*np.pi*x/L)
 def psi_2(n,L,x):
@@ -55,7 +57,7 @@ I ara ja si, fem les gràfiques.
 {: .note }
 No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
 
-```js
+```py
 pyplt.figure(figsize=(15,10))
 
 pyplt.suptitle("Funcions d'ona", fontsize=18)
@@ -100,7 +102,7 @@ $$ \psi_n(x,y)=\sqrt{\frac{2}{L_x}}\sqrt{\frac{2}{L_y}}\sin{\left(\frac{n\pi}{L_
 
 Igual que amb l'exemple anterior, primer definirem algunes de les variables com \\(n\\), \\(L_x\\) i \\(L_y\\).
 
-```js
+```py
 n = 1
 
 Lx = 1**-10
@@ -111,7 +113,7 @@ x,y = np.linspace(0, Lx, 200), np.linspace(0, Ly, 200)
 
 Ara definim la funció:
 
-```js
+```py
 def psi_3d(a,b):
   return np.sqrt(2/Lx)*np.sqrt(2/Ly)*np.sin(n*np.pi*a/Lx)*np.sin(n*np.pi*b/Ly)
 def psi2_3d(a,b):
@@ -120,7 +122,7 @@ def psi2_3d(a,b):
 
 I tornem a fer les gràfiques. Aquestes les podem fer per separat:
 
-```js
+```py
 X,Y = np.meshgrid(x,y)
 psi = np.array([psi_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
 PSI = psi.reshape(X.shape)
@@ -139,7 +141,7 @@ pyplt.show()
 ```
 ![02](../images/part_caixa/02.png)
 
-```js
+```py
 X,Y = np.meshgrid(x,y)
 psi2 = np.array([psi2_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
 PSI2 = psi2.reshape(X.shape)
@@ -161,7 +163,7 @@ pyplt.show()
 
 O bé o podem fer de manera conjunta:
 
-```js
+```py
 X,Y = np.meshgrid(x,y)
 
 psi = np.array([psi_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
@@ -197,7 +199,7 @@ També es pot fer com una "mostra automàtica" de la funció d'ona i la seva fun
 
 Primer cal importar les llibreries necessàries i definir la funció de la partícula en una caixa vist anteriorment:
 
-```js
+```py
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -206,7 +208,7 @@ def psi(x,n,L): return np.sqrt(2.0/L)*np.sin(float(n)*np.pi*x/L)
 
 Ara cal saber per a quines característiques es vol graficar la funció. Això ho indicarà l'alumne:
 
-```js
+```py
 n = int(input("Digues el valor del nombre quàntic principal: n = "))
 L = float(input("Digues la llargada de la caixa en Angstroms: L = "))
 ```
@@ -214,7 +216,7 @@ L = float(input("Digues la llargada de la caixa en Angstroms: L = "))
 Amb les informacions que hem donat nosaltres de la funció i les caràcterístiques que volem que tingui aquesta funció, ja es poden fer les gràfiques.
 Per aquest exemple, farem que `n=2` i `L=10`.
 
-```js
+```py
 print('Caracerísitiques de la funció: n=%s; L=%s' %(n,L))
 
 # Funció de ona
@@ -248,3 +250,6 @@ plt.show()
     "SVG": { linebreaks: { automatic: true } },
     });
 </script>
+
+
+<script>{% include js/copy-button.js %}</script>

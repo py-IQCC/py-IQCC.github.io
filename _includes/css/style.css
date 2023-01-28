@@ -1,0 +1,27 @@
+body {
+  color: violet;
+}
+
+button {
+	position: absolute; top: 4px; right: 4px;
+	color: rgb(130,70,130);
+	background-color: rgb(220,220,220);
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 5px;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+pre {
+	position: relative;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 0.75em;
+	margin: 0.5em;
+}
+
+pre code {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
