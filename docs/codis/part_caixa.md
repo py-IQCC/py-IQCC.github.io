@@ -6,6 +6,7 @@ katex: True
 usemathjax: true
 ---
 
+
 <style>{% include css/style.css %}</style>
 
 # **Partícula en una caixa**
@@ -27,6 +28,7 @@ $$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
 
 Primer necessitem importal les següents llibreries (per a aquesta part en concret):
 
+{% include codeHeader.html %}
 ```py
 import matplotlib as plt
 import matplotlib.pyplot as pyplt
