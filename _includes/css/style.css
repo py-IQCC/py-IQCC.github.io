@@ -1,23 +1,30 @@
 body {
 }
 
+/* code button */
 button {
-	position: absolute; top: 4px; right: 4px;
-	color: rgb(130,70,130);
+	position: absolute; top: -2px; right: -2px;
+  color: rgb(80,80,80);
 	background-color: rgb(220,220,220);
-  opacity: 0.8;
+  border: 1px solid rgb(240,240,240);
+  box-shadow: none;
+  opacity: 0.2;
 	width: 2em;
 	height: 2em;
 	border-radius: 5px;
 	padding: 0.2em;
+  margin: 0;
 	vertical-align: top;
+}
+button:hover{
+  opacity: 0.8;
 }
 
 pre {
 	position: relative;
 	border: 2px solid black;
 	border-radius: 8px;
-	padding: 0.75em;
+	padding: 0.5em;
 	margin: 0.5em;
 }
 
@@ -25,3 +32,10 @@ pre code {
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
+/* ----- */
+
+
+
+/* images */
+img {max-width:50%;}
+p img {display:block; margin:1em auto;}

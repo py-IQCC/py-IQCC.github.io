@@ -1,0 +1,30 @@
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script>
+  setTimeout(() => {
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook("End", function() {
+    setTimeout(() => {
+          svg.selectAll('.x>.tick').each(function(){
+          var self = d3.select(this),
+              g = self.select('text>span>svg');
+          g.remove();
+          self.append(function(){
+            return g.node();
+          });
+        });
+      }, 1);
+    });
+
+  MathJax.Hub.Queue(["Typeset", MathJax.Hub,], d3.select('.x.axis').node());
+
+}, 1);
+</script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

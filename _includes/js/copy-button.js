@@ -4,7 +4,7 @@ blocks.forEach((block) => {
   if (navigator.clipboard) {
     let button = document.createElement("button");
 
-		button.className = "fa fa-clipboard";
+		button.className = "fa fa-clone";
 		block.insertBefore(button, block.firstChild);
 
     button.addEventListener("click", async () => {
@@ -22,6 +22,6 @@ async function copyCode(block, button) {
 	button.className = "fa fa-check";
 
   setTimeout(() => {
-    button.className = "fa fa-clipboard";
+    button.className = "fa fa-clone";
   }, 1000);
 }

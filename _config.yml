@@ -167,6 +167,9 @@ execute:
   execute_notebooks: cache
   run_in_temp: true
 
+  just-the-docs:
+    code_copy: true
+
 # For copy button on code
 enable_copy_code_button: true
 
@@ -194,6 +197,7 @@ footer_content: "Copyright &copy; 2022-2023 Carles Alcaide. Distribuit per una <
 
 plugins:
   - jekyll-seo-tag
+  - just-the-docs
 
 color_scheme: nil
 

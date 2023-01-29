@@ -6,8 +6,6 @@ katex: True
 usemathjax: true
 ---
 
-<style>{% include css/style.css %}</style>
-
 # **Partícula en una caixa**
 {: .no_toc }
 
@@ -242,14 +240,3 @@ plt.show()
 ![05](../images/part_caixa/05.png)
 ![06](../images/part_caixa/06.png)
 
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/x-mathjax-config">
-    // Make responsive
-    MathJax.Hub.Config({
-    "HTML-CSS": { linebreaks: { automatic: true } },
-    "SVG": { linebreaks: { automatic: true } },
-    });
-</script>
-
-
-<script>{% include js/copy-button.js %}</script>
