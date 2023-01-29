@@ -1,4 +1,8 @@
-# REFERENCIES
+---
+layout: default
+---
+
+# Referencies
 
 ## Cheat Sheets
 
