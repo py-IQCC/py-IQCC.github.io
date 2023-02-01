@@ -66,7 +66,7 @@ plt.show()
 
 La comanda `slope, intercept, R, p_value, std_err = scipy.stats.linregress(x,y)` el que fa és dir que faci una regressió linal amb les dades `x` i `y` i que
 digui el pendent (`slope`), l'ordenada a l'origen (`intercept`), el valor de R (`R`), el valor p (`p_value`) i l'error estàndard (`std_err`).
-Sempre que vulguem referir-nos a qualsevol d'aquest paràmetres, ho haurem de fer pel nom establert, per exemple quan vulguem calcular el valor de \\(r^2)\\,
+Sempre que vulguem referir-nos a qualsevol d'aquest paràmetres, ho haurem de fer pel nom establert, per exemple quan vulguem calcular el valor de \\(r^2\\),
 simplement haurem d'afegir `R**2`, com en el codi anterior.
 
 # **Regressió multilineal**
