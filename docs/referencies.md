@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Referències
 ---
 
-# Referencies
+# Referències
 
 ## Cheat Sheets
 
