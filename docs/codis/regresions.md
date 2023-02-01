@@ -35,9 +35,9 @@ Un cop importats els paquets que necessitem, ja podem començar a fer les regres
 
 Com ja sabem una regressió lineal té la següent forma:
 
-$$y=mx+n$$
+$$y=ax+b$$
 
-on *m* és el pendent i *n* és l'ordenada a l'origen.
+on *a* és el pendent i *b* és l'ordenada a l'origen.
 
 Primer definirem els punts que volem interpolar (x i y).
 
@@ -73,7 +73,7 @@ simplement haurem d'afegir `R**2`, com en el codi anterior.
 
 Python també ens dona l'opció de poder fer regressions multilineals de l'estil:
 
-$$y=m_1x_1+m_2x_2+m_3x_3+\cdots+m_nx_n+n$$
+$$y=a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n+b$$
 
 Per això només caldrà definir totes les entrades que volguem i generar el model multilineal.
 
@@ -97,6 +97,10 @@ print("R^2 =",R2)
 
 Per a la regressió polinòmica farem un procediment semblant a la regressió lineal simple: definirem les dades, generarem el polinomi interpolador del grau que
 nosaltres indiquem i el graficarem.
+
+Recordem que una regressió polinòmica és del tipus:
+
+$$y=b+a_1x+a_2x^2+a_3x^3+\cdot+a_nx^n$$
 
 ```py
 x =[1,2,3,5,6,7,8,9,10,12,13,14,15,16,18,19,21,22]
