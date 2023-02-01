@@ -24,7 +24,7 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 - [Diagrames d'energia](diagrames_energies.md)
 
 ## **EINES MATEMÀTIQUES**
-- Regressió lineal i multilineal
+- [Regressió lineal, multilineal i polinòmica](regresions.md)
 - Interpolacions polinòmiques
 - Resolució d'equacions
 - Matrius (diagonalització, eigenvalues/eigenfunctions, transposades, etc.)
