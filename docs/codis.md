@@ -1,3 +1,8 @@
+---
+layout: default
+title: Codis
+---
+
 # **Codis**
 
 Aquí teniu els codis que deixem a la vostra disposició separat per especialitats.
