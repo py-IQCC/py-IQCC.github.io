@@ -64,6 +64,7 @@ To example how to do this project, we will use the next example:
 >$$\begin{align}&k_1 = 4.7\cdot10^{–7} s^{–1}\\&k_{–1} = 4.2\cdot10^{–11} molecules^{–1}\cdot cm^3\cdot s^{–1}\\&k_2 = 9.3\cdot10^{–7} molecules^{–1}\cdot cm^3\cdot s^{–1}\end{align}$$
 >
 >Assuming \\([O_2]_0 = 1.5·10^{17} molecules\cdot cm^{–3}\\); \\([O_3]_0 = 7.4\cdot10^{12} molecules\cdot cm^{–3}\\), simulate theprocess during 2 years.
+>
 >Analyze the resulting \\([O_3]_t\\) in the suitable coordinates to show that the reaction is second order with respect to \\([O_3]\\).
 
 
