@@ -36,13 +36,15 @@ blocks.forEach((block) => {
 
 	
 	/* --- Python Code Compiler --- */
-	let runCodeButton = document.createElement("button");
-	runCodeButton.id = "runCodeButton";
-	runCodeButton.className = "fa fa-play";
-	block.insertBefore(runCodeButton, block.firstChild);
-	runCodeButton.addEventListener("click", async () => {
-		await runCode(block, runCodeButton);
-	});
+	if (block.querySelector("code textarea")) {
+		let runCodeButton = document.createElement("button");
+		runCodeButton.id = "runCodeButton";
+		runCodeButton.className = "fa fa-play";
+		block.insertBefore(runCodeButton, block.firstChild);
+		runCodeButton.addEventListener("click", async () => {
+			await runCode(block, runCodeButton);
+		});
+	};
 	
 	async function runCode(block, runCodeButton) {
 		/* create elements for each block */
