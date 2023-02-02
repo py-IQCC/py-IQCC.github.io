@@ -56,17 +56,13 @@ To example how to do this project, we will use the next example:
 
 {: .highlight }
 The mechanism of ozone decomposition \\(2O_3\rightarrow 3O_2\\) can be represented as follows:
-
 $$\begin{align}O_3\leftrightarrow O_2+O\quad (k_1,k_{-1})\\O+O_3\rightarrow2O_2\quad (k_2)\end{align}$$
-
 with the following rate constants:
-\\(k1 = 4.7\cdot10^{–7} s^{–1}\\)
-\\(k_{–1} = 4.2\cdot10^{–11} molecules^{–1}\cdot cm^3\cdot s^{–1}\\)
-\\(k2 = 9.3\cdot10^{–7} molecules^{–1}\cdot cm^3\cdot s^{–1}\\)
-
+\\(k_1 = 4.7\cdot10^{–7} s^{–1}\\)
+\\(\\k_{–1} = 4.2\cdot10^{–11} molecules^{–1}\cdot cm^3\cdot s^{–1}\\)
+\\(\\k_2 = 9.3\cdot10^{–7} molecules^{–1}\cdot cm^3\cdot s^{–1}\\)
 Assuming \\([O_2]_0 = 1.5·10^{17} molecules\cdot cm^{–3}\\); \\([O_3]_0 = 7.4\cdot10^{12} molecules\cdot cm^{–3}\\), simulate the
 process during 2 years.
-
 Analyze the resulting \\([O_3]_t\\) in the suitable coordinates to show that the reaction is second
 order with respect to \\([O_3]\\).
 
