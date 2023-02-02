@@ -1,0 +1,96 @@
+#copyCodeButton {
+	font-size: 13px;
+	position: absolute; top: 10px; right: 10px;
+	color: rgb(75,75,75);
+	background-color: rgb(235,235,235);
+	opacity: 0.3;
+	width: 2em;
+	height: 2em;
+	border-radius: 5px;
+	padding: 0.2em;
+	vertical-align: top;
+	z-index: 10;
+}
+#copyCodeButton:hover {
+	opacity: 0.8;
+}
+
+pre {
+	position: relative;
+	padding: 0;
+  border-color: #F5F6FA;
+	border-radius: 8px;
+	padding: 0;
+	margin: 0.5em;
+	height:auto;
+	background-color: #F5F6FA;
+}
+
+pre code {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 0;
+	background-color: #F5F6FA;
+}
+
+textarea {
+	background-color: #F5F6FA;
+	border: none;
+	display: block;
+	width: 100%;
+	margin: auto auto -1.5em auto;
+	padding: 8px;
+	font-family: inherit;
+	font-size: 14px;
+	/*height: calc(4*8px + 3em);*/
+  position: relative;
+  top: -1em;
+}
+textarea:focus {
+	outline: none;
+}
+
+#codeForm, #code {
+	display: none;
+	height: 0;
+}
+
+iframe {
+	border:none;
+	border-shadow:none;
+	display: block;
+	transform: scale(80%);
+	position: relative;
+	left: -10%;
+	width: 120%;
+}
+
+.iframewrapper {
+	width:100%;
+	height: auto;
+	margin: 1em auto auto auto;
+	display:block;
+	height:auto; 
+	padding:0; 
+	background-color: black;
+	border-radius:6px;
+	position: relative;
+	top: ;
+}
+
+#runCodeButton {
+	font-size: 13px;
+	position: absolute; top: 10px; right: 40px;
+	color: rgb(75,75,75);
+	background-color: rgb(235,235,235);
+	opacity: 0.3;
+	width: 2em;
+	height: 2em;
+	border-radius: 5px;
+	padding: 0.2em;
+	vertical-align: top;
+	z-index: 10;
+}
+#runCodeButton:hover {
+	opacity: 0.8;
+}
