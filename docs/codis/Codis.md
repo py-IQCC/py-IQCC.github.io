@@ -25,7 +25,7 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 
 ## **EINES MATEMÀTIQUES**
 - [Regressió lineal, multilineal i polinòmica](regresions.md)
-- Resolució d'equacions
+- [Resolució d'equacions](res_eq.md)
 - Matrius (diagonalització, eigenvalues/eigenfunctions, transposades, etc.)
 
 ## **MISCEL·LÀNIA**
