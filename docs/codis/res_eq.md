@@ -70,7 +70,7 @@ sympy.simplify((3*x**2 - 4*x - 15) / (x - 3))
 
 ## Ressolució d'equacions
 
-SymPy també pot resoldre equacions d'una variable desconeguda mitjançant la funció solve().
+SymPy també pot resoldre equacions d'una variable desconeguda mitjançant la funció `solve()`.
 La funció requereix una única expressió igual a zero. Per exemple, el següent resol per \\(x\\) en \\(x^2+1.4x-5.76=0\\).
 
 ```py
@@ -83,10 +83,10 @@ Una aplicació química comuna de les operacions algebraiques anteriors és reso
 ICE (Initial, Change, and Equilibrium). Com a penúltim pas, les expressions matemàtiques s'insereixen a l'expressió d'equilibri
 i sovint donen lloc a una equació polinòmica. A continuació es mostra un exemple de problema amb la taula ICE completada i l'expressió d'equilibri.
 
-|     | 2 NH$_3$ | $\rightleftharpoons$ | 3 H$_2$ (g) | + | N$_2$ (g) |
+|     | 2 NH\\(_3\\) | \\(\rightleftharpoons\\) | 3 H\\(_2\\) (g) | + | N\\(_2\\) (g) |
 |:--: | :--:  |:-:|:-------: |:--:|:-----|
 |Inicial| 0.60 M |  | 0.60 M |  | 0.80 M |
-|Variació, $\Delta$| -2x |  |  +3x   |  |  +x    |
+|Variació, \\(\Delta\\)| -2x |  |  +3x   |  |  +x    |
 |Equilibri| 0.60 - 2x | | 0.60 + 3x |  | 0.80 + x |
 
 $$K_c = 3.44 = \frac{[N_2][H_2]^3}{[NH_3]^2} = \frac{(0.80 + x)(0.60 + 3x)^3}{(0.60 - 2x)^2}$$
@@ -106,7 +106,7 @@ Podem indicar a SymPy que simplifiqui els resultats.
 sympy.simplify(sympy.expand(expr))
 ```
 
-Això és molt millor. En definitiva, volem resoldre per $x$, però la funció `solve()` requereix una expressió que sigui igual a zero.
+Això és molt millor. En definitiva, volem resoldre per \\(x\\), però la funció `solve()` requereix una expressió que sigui igual a zero.
 Ho podem aconseguir restant \\(3.44\\).
 
 ```py
