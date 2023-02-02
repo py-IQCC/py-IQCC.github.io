@@ -55,7 +55,7 @@ Substances = "O3, O2, O"
 To example how to do this project, we will use the next example:
 
 {: .highlight }
-0. The mechanism of ozone decomposition \\(2O_3\rightarrow3O_2\\) can be represented as follows:
+The mechanism of ozone decomposition \\(2O_3\rightarrow 3O_2\\) can be represented as follows:
 
 $$\begin{align}O_3\leftrightarrow O_2+O\quad (k_1,k_{-1})\\O+O_3\rightarrow2O_2\quad (k_2)\end{align}$$
 
