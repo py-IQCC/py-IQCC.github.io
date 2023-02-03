@@ -2,7 +2,7 @@ body {
 }
 
 /* code button */
-button {
+#copyCodeButton {
 	position: absolute; top: -2px; right: -2px;
   color: rgb(80,80,80);
 	background-color: rgb(220,220,220);
@@ -16,7 +16,7 @@ button {
   margin: 0;
 	vertical-align: top;
 }
-button:hover{
+#copyCodeButton:hover{
   opacity: 0.8;
 }
 
@@ -32,6 +32,14 @@ pre code {
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
+
+
+@media only screen and (max-width: 500px) {
+	pre code {white-space: pre;}
+	pre {overflow: auto;}
+}
+
+
 /* ----- */
 
 

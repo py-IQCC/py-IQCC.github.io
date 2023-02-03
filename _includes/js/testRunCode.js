@@ -1,13 +1,28 @@
-let textareas = document.querySelectorAll("textarea");
+/* --- textarea Adjustments --- */
+const textareas = document.querySelectorAll("textarea");
 textareas.forEach((textarea) => {
+	let length0 = textarea.value.split(/\n/g).length;
+	textarea.style.height = length0 + 1.5 + 'em';
 	textarea.addEventListener('input', function () {
 		textarea.style.height = 'auto';
-		textarea.style.height = textarea.scrollHeight + 'px';
+		textarea.style.height = textarea.scrollHeight + length0 + 'px';
 	});
 });
 
-
 	
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Copy and Run Code Blocks ---------- */
 let blocks = document.querySelectorAll("pre");
 blocks.forEach((block) => {
 	

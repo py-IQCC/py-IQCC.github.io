@@ -20,7 +20,6 @@ pre {
 	padding: 0;
   border-color: #F5F6FA;
 	border-radius: 8px;
-	padding: 0;
 	margin: 0.5em;
 	height:auto;
 	background-color: #F5F6FA;
@@ -33,7 +32,7 @@ pre code {
 	background-color: #F5F6FA;
 }
 
-textarea {
+pre code textarea {
 	background-color: #F5F6FA;
 	border: none;
 	display: block;
@@ -42,13 +41,18 @@ textarea {
 	padding: 8px;
 	font-family: inherit;
 	font-size: 14px;
-	/*height: calc(4*8px + 3em);*/
   position: relative;
   top: -1em;
 }
-textarea:focus {
+pre code textarea:focus {
 	outline: none;
 }
+
+@media only screen and (max-width: 500px) {
+	pre code {white-space: pre;}
+	pre {overflow: auto;}
+}
+
 
 #codeForm, #code {
 	display: none;
@@ -57,11 +61,10 @@ textarea:focus {
 
 iframe {
 	border:none;
-	border-shadow:none;
 	display: block;
 	transform: scale(80%);
 	position: relative;
-	left: -10%;
+	left: -8%;
 	width: 120%;
 }
 
@@ -70,12 +73,9 @@ iframe {
 	height: auto;
 	margin: 1em auto auto auto;
 	display:block;
-	height:auto; 
 	padding:0; 
 	background-color: black;
 	border-radius:6px;
-	position: relative;
-	top: ;
 }
 
 #runCodeButton {
@@ -94,3 +94,15 @@ iframe {
 #runCodeButton:hover {
 	opacity: 0.8;
 }
+
+
+
+/* ----- */
+
+
+
+/* images */
+@media only screen and (min-width: 600px) {
+	img {max-width:50%;} /* 100% on mobile */
+}
+p img {display:block; margin:1em auto;}
