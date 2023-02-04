@@ -2,8 +2,8 @@
 name: Carles Alcaide
 role: Teaching Assistant
 email: carlesalcaideblaya@gmail.com
-<!-- website: https://kevinl.info -->
-photo: IMG_9972.JPG
+<!-- website: https://github.com/calcide -->
+photo: equip/Carles.png
 ---
 
 <!-- I like teaching Computer Science! -->

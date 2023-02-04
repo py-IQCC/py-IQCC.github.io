@@ -1,6 +1,6 @@
 ---
 layout: default 
-title: Partícula en una caixa
+title: Matrius i Àlgebra Lineal
 parent: Codis
 katex: True
 usemathjax: true
@@ -9,7 +9,7 @@ usemathjax: true
 <style>{% include css/testRunCode.css %}</style>
 
 
-# Matrius
+# Matrius i Àlgebra Lineal
 
 {: .note }
 En obres, ho de executar el codi és una prova.<br>Per poder utilitzar els notebooks amb el botó, el propietari del repositori els ha de penjar des de google drive.
@@ -95,7 +95,7 @@ print(eVals)
 print(eVecs)
 </textarea><form id="codeForm" autocomplete="off"><input type="hidden" name="code" id="code"/></form></code></pre>
 
-En l'apartat on apreniem a representar la Superficie d'Energia Potencial treballaven amb funcions de moltes dimensions. Al'hora de caracteritzar un punt de l'espai d'una funció bidimensional en fem prou amb calcular les segones derivades del polinomi:
+En l'apartat on apreniem a representar la Superficie d'Energia Potencial treballaven amb funcions de moltes dimensions. A l'hora de caracteritzar un punt de l'espai d'una funció bidimensional en fem prou amb calcular les segones derivades del polinomi:
 
 ```py
 # elaborant un polinomi amb numpy:

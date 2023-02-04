@@ -1,8 +1,14 @@
 ---
-layout: page
+layout: page 
 title: Equip
 description: Membres del projecte PY-IQCC.
 ---
+
+<style>
+.staffer-image {height:150px !important; width:150px !important;}
+</style>
+
+
 
 # **Equip**
 
