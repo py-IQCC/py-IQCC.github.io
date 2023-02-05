@@ -39,7 +39,7 @@ plt.show()
 ```
 ![01](../images/grafiques/01.png)
 
-Aquest és el vostre primer gràfic, enhorabona! Tot i això, no és gaire maco. Per modificar-lo, podem seguir amb alguns arguments com `marker`, `linestyle`, i `color`. L'argument `marker` serveix per dir com volem que es representin totes les dades (si volem que siguin quadrats, triangles, punts petits o grans, etc.), `linestyle` representa la línia que uneix els punts i `color` representa el color amb el qual es marquen les dades. Si a `linestyle` o a `marker` no hi ha cap paràmetre, no s'inclourà en el gràfic ni un a línia que uneixi els punts ni un marcador. A continuació us presentem alguns inputs que podeu ficar per modificar els gràfics com volgueu, però recordeu que al web https://matplotlib.org hi podeu trobar totes les opcions, tant d'arguments com de marcadors, estils de línia i colors..
+Aquest és el vostre primer gràfic, enhorabona! Tot i això, no és gaire maco. Per modificar-lo, podem seguir amb alguns arguments com `marker`, `linestyle`, i `color`. L'argument `marker` serveix per dir com volem que es representin totes les dades (si volem que siguin quadrats, triangles, punts petits o grans, etc.), `linestyle` representa la línia que uneix els punts i `color` representa el color amb el qual es marquen les dades. Si a `linestyle` o a `marker` no hi ha cap paràmetre, no s'inclourà en el gràfic ni un a línia que uneixi els punts ni un marcador. A continuació us presentem alguns inputs que podeu ficar per modificar els gràfics com volgueu, però recordeu que al web https://matplotlib.org hi podeu trobar totes les opcions, tant d'arguments com de marcadors, estils de línia i colors.
 
 **Taula 1** Marcadors comuns a Matplotlib
 
