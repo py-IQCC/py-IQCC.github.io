@@ -12,7 +12,7 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 - [Visualització d'orbitals atòmics](codis/orb_atom.md)
 - RHF calculation example
 - Treball QQE (nom provisional)
-- [Potential Energy Surfaces](codis/PES.md)
+- Potential Energy Surfaces
 
 ## **CINÈTICA QUÍMICA**
 - Material Sergei (modelatge d'una reacció cinètica, com graficar-ho, fer gif?)
