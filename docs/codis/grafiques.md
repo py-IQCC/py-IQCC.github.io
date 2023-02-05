@@ -18,12 +18,11 @@ Primerament, importem el paquet que utilitzarem per fer les representacions grà
 ```js
 import matplotlib.pyplot as plt
 ```
-Per tal de córrer un gràfic cal tenir unes coordenades a dibuixar. En aquest cas, tindrem en compte la funció d'ona d'un orbital 3s de l'àtom d'hidrogen en base a la seva distància **r** (en *Bohrs*). Definirem una funció **f(r)** i diferents valors de radi entre 1 i 150. També calcularem el valor de f(r) per a cada r que hem definit. Per les constants i operacions matemàtiques s'utilitzarà el paquet **math**:
+Per tal de córrer un gràfic cal tenir unes coordenades a dibuixar. En aquest cas, tindrem en compte la funció **y=sin(x)** per a diferents valors de **x** entre 0 i 4$\pi$. També calcularem el valor de y(x) per a cada x que hem definit:
 
 $$ y=sin(x) $$
 
 ```js
-import math
 import numpy as np
 
 x = np.arange(0,4*np.pi,0.1)   # start,stop,step
@@ -40,7 +39,7 @@ plt.show()
 ```
 ![01](../images/grafiques/01.png)
 
-Aquest és el vostre primer gràfic, enhorabona! Tot i això, no és gaire maco. Per modificar-lo, podem seguir amb alguns arguments com `marker`, `linestyle`, i `color`. L'argument `marker` representa el marcador que representa cadascuna de les dades que representem, `linestyle` representa la línia que uneix els punts i `color` representa el color amb el qual es representen les dades. Si a `linestyle` o a `marker` no hi ha cap paràmetre, no s'inclourà en el gràfic ni un a línia que uneixi els punts ni un marcador. A continuació us presentem alguns inputs que podeu ficar per modificar els gràfics com volgueu, però recordeu que al web https://matplotlib.org hi podeu trobar totes les opcions.
+Aquest és el vostre primer gràfic, enhorabona! Tot i això, no és gaire maco. Per modificar-lo, podem seguir amb alguns arguments com `marker`, `linestyle`, i `color`. L'argument `marker` serveix per dir com volem que es representin totes les dades (si volem que siguin quadrats, triangles, punts petits o grans, etc.), `linestyle` representa la línia que uneix els punts i `color` representa el color amb el qual es marquen les dades. Si a `linestyle` o a `marker` no hi ha cap paràmetre, no s'inclourà en el gràfic ni un a línia que uneixi els punts ni un marcador. A continuació us presentem alguns inputs que podeu ficar per modificar els gràfics com volgueu, però recordeu que al web https://matplotlib.org hi podeu trobar totes les opcions, tant d'arguments com de marcadors, estils de línia i colors..
 
 **Taula 1** Marcadors comuns a Matplotlib
 
@@ -97,7 +96,7 @@ plt.show()
 ```
 ![04](../images/grafiques/04.png)
 
-Tenint dos conjunts de dades, hem de saber diferenciar què representa cada punt del gràfic. Primerament, podem marcar quines son les dades que estem tractant, és a dir, ficant una **label** a cada variable. Tanmateix, podem posar tant títol a cadascun dels eixos (**plt.xlabel()** i **plt.ylabel()**) com títol general a la figura(**plt.title()**). Tenint en compte les labels que hem atorgat a les variables, podem fer una llegenda automàtica per saber què és el que s'està representant al gràfic (**plt.legend()**). Per últim, podem ficar una graella perquè algunes de les dades es vegin millor, amb la comanda **plt.grid(True)**. Ficant tota aquesta informació, el gràfic pot quedar així:
+Tenint dos conjunts de dades, hem de saber diferenciar què representa cada punt del gràfic. Primerament, podem marcar quines son les dades que estem tractant, és a dir, ficant una `label` (etiqueta) a cada variable. Tanmateix, podem posar tant títol a cadascun dels eixos (**plt.xlabel()** i **plt.ylabel()**) com títol general a la figura(**plt.title()**). Tenint en compte les etiquetes que hem atorgat a les variables, podem fer una llegenda automàtica per saber què és el que s'està representant al gràfic (**plt.legend()**). Per últim, podem ficar una graella perquè algunes de les dades es vegin millor, amb la comanda **plt.grid(True)**. Ficant tota aquesta informació, el gràfic pot quedar així:
 ```js
 plt.plot(x,y,'b.', label='sin(x)')
 plt.plot(x,z,'r-', label='cos(x)')
@@ -233,7 +232,7 @@ plt.show()
 ```
 ![12](../images/grafiques/12.png)
 
-En aquest cas hem utilitzat un **cmap**, és a dir, una paleta de colors. A aquesta paleta se li poden assignar uns valors. Així doncs, cada punt de la gràfica donarà tres informacions: la de la posició x, la de la posició y i la de la intensitat del color respecte la barra de colors. Per a que es vegi a la figura, es pot utilitzar la comanda **plt.colorbar()**. Hi ha moltes paletes de colors diferents que es troben. La millor manera de trobar els colors més adients al treball és fer servir en una cel·la diferent la comanda **plt.colormaps()**, que ens donarà una llista de totes les opcions possibles, i a xafardejar! Si el que es vol és invertir l'ordre de les paletes (és a dir, que el color que per defecte marca el valor més baix sigui el que ara marca el valor més baix), caldrà afegir **_r** després de la paleta (per exemple, **cmap('Blues:r')**). Recordem també que no és estrictament necessari fer servir el colormap per aquest tipus de gràfic, sinó que amb la informació x i y dels punts ja és suficient per representar dades.
+En aquest cas hem utilitzat un **cmap**, és a dir, una paleta de colors. A aquesta paleta se li poden assignar uns valors. Així doncs, cada punt de la gràfica donarà tres informacions: la de la posició x, la de la posició y i la de la intensitat del color respecte la barra de colors. Per a que es vegi a la figura, es pot utilitzar la comanda **plt.colorbar()**. Hi ha moltes paletes de colors diferents que es troben. La millor manera de trobar els colors més adients al treball és fer servir en una cel·la diferent la comanda **plt.colormaps()**, que ens donarà una llista de totes les opcions possibles, i a xafardejar! Si el que es vol és invertir l'ordre de les paletes (és a dir, que el color que per defecte marca el valor més baix sigui el que ara marca el valor més baix), caldrà afegir **_r** després de la paleta (per exemple, **cmap('Blues_r')**). Recordem també que no és estrictament necessari fer servir el colormap per aquest tipus de gràfic, sinó que amb la informació x i y dels punts ja és suficient per representar dades.
 
 
 ### **SURFACE PLOT 3D**
@@ -283,6 +282,7 @@ plt.show()
 
 En aquest gràfic som capaços de representar quatre tipus de dades diferents. NO és recomenable fer-ho ja que pot costar d'entendre, just l'efecte contrari del que es vol amb una gràfica. Tot i això, us mostrem un exemple perquè pot ser que en algun moment ho feu servir, i si més no perquè veieu quantes coses es poden fer amb aquest paquet. Cada punt aporta una coordenada x, y i z que codifica un valor en concret. A més, la intensitat del color dona el quart valor a cada punt. Una altra manera de representar les intensitats de colors és com es mostra a la gràfica de dalt, donant un valor aproximat de cada valor a cada intensitat diferent.
 
+### **GUARDAR ELS GRÀFICS**
 
 Ara hem vist diferents gràfics que es poden fer servir utilitzant Python. L'últim pas és descarregar aquestes imatges que hem creat. Tot i que la forma convencional de fer click dret i "Guardar la imatge" us pot semblar la manera més fàcil, pot perdre una mica de qualitat. Per això mateix existeix la comanda **plt.savefig()**, que permet guardar la figura allà mateix on estigueu treballant amb el codi (si esteu treballant amb el Google Colab, es guardarà a la finestra de l'esquerra. En aquesta comanda podeu afegir, entre d'altres, el nom i tipus del fitxer i la mida, per tal que es tingui la màxima resolució possible.
 ```js
