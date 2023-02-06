@@ -19,11 +19,11 @@ usemathjax: true
 
 ## ***Caixa unidimensional***
 
-El que es pot fer amb Python és graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
+En aquest capítol aprendrem a graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
 
 $$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
 
-Primer necessitem importal les següents llibreries (per a aquesta part en concret):
+Primer necessitem importar les llibreries per aquest exercici en concret:
 
 ```py
 import matplotlib as plt
@@ -32,7 +32,7 @@ import matplotlib.pyplot as pyplt
 import numpy as np
 ```
 
-Un cop tenim importades les llibreries, ja posem començar a escriure el codi que ens permeterà observar aquesta funció en funció de *n*, és a dir, del nombre quàntic principal.
+Un cop tenim importades les llibreries, ja podem començar a escriure el codi que ens permeterà observar aquesta expressió en funció de *n*, és a dir, del nombre quàntic principal.
 
 Primer caldrà determinal la llargada de la caixa unidimensional (***L***).
 
@@ -41,7 +41,7 @@ L = 1         # Llargada de la caixa
 x_list = np.linspace(0,L,100)       # Aquest són els valors que necessitem per a poder fer les gràfiques
 ```
 
-Ara caldrà definir les funcions que volem graficar. Com volem veure la pròpia funció i el seu quadrat (funció probabilitat), caldrà definir-les per separat.
+Ara caldrà definir les funcions que volem graficar. Com que volem veure la pròpia funció i el seu quadrat (funció probabilitat), caldrà definir-les per separat.
 
 ```py
 def psi(n,L,x):
@@ -50,7 +50,7 @@ def psi_2(n,L,x):
     return np.square(psi(n,L,x))
 ```
 
-I ara ja si, fem les gràfiques.
+I ara ja sí, fem les gràfiques.
 
 {: .note }
 No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
