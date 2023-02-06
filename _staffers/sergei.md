@@ -3,7 +3,7 @@ name: Dr. Sergei Vyboishchikov
 role: Professor
 email: vybo@iqcc.udg.edu
 <!-- website: https://kevinl.info -->
-photo: equip/Nombre.png
+photo: equip/Sergey.png
 ---
 
 <!-- I like teaching Computer Science! -->
