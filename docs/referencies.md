@@ -8,18 +8,26 @@ title: Referències
 ## Cheat Sheets
 
 ## Bases de dades
-- [Nist](https://webbook.nist.gov/chemistry/form-ser/)
+- [NIST](https://webbook.nist.gov/chemistry/form-ser/)
+- [PDB](https://www.rcsb.org/)
 
-## Documentació
+## Llibreries de Python
 - [PySCF](https://pyscf.org/user.html)
 - [SciPy](https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide)
+- [NumPy]
+- [Matplotlib]
+- [Pandas]
+- [SimPy]
 
 ## Eines Online
 - [molview.org](https://molview.org/)
-- [symotter](https://symotter.org/gallery)
+- [Symotter](https://symotter.org/gallery)
+- [Ptable]
+- [WolframAlpha]
 
 ## Videos
 - [Computational Chemistry (Intro)](https://m.youtube.com/playlist?list=PLm8ZSArAXicIWTHEWgHG5mDr8YbrdcN1K)
 
 ## Webs, llibres, articles i altres
 - [Scientific Computing for Chemists with Python](https://weisscharlesj.github.io/SciCompforChemists/intro.html)
+- [Quantum Mechanics and Spectroscopy](https://qchem.qc-edu.org/main_content.html)
