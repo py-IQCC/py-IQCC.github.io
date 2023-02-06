@@ -14,16 +14,16 @@ title: Referències
 ## Llibreries de Python
 - [PySCF](https://pyscf.org/user.html)
 - [SciPy](https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide)
-- [NumPy]
-- [Matplotlib]
-- [Pandas]
-- [SimPy]
+- [NumPy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [SimPy](https://simpy.readthedocs.io/en/latest/)
 
 ## Eines Online
 - [molview.org](https://molview.org/)
 - [Symotter](https://symotter.org/gallery)
-- [Ptable]
-- [WolframAlpha]
+- [Ptable](https://ptable.com/#Propietats)
+- [WolframAlpha](https://www.wolframalpha.com/)
 
 ## Videos
 - [Computational Chemistry (Intro)](https://m.youtube.com/playlist?list=PLm8ZSArAXicIWTHEWgHG5mDr8YbrdcN1K)
