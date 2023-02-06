@@ -10,9 +10,10 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 ## **QUÍMICA QUÀNTICA**
 - [Partícula en una caixa](codis/part_caixa.md)
 - [Visualització d'orbitals atòmics](codis/orb_atom.md)
-- RHF calculation example
+- Representació 3D d'orbitals moleculars
 - Treball QQE (nom provisional)
 - Potential Energy Surfaces
+- RHF calculation example
 
 ## **CINÈTICA QUÍMICA**
 - Material Sergei (modelatge d'una reacció cinètica, com graficar-ho, fer gif?)
@@ -28,15 +29,14 @@ Aquí teniu els codis que deixem a la vostra disposició separat per especialita
 - [Generació de gràfiques](codis/grafiques.md)
 - Diagrames ternaris
 - [Diagrames d'energia](codis/diagrames_energies.md)
-- Espectres
+- Espectres (IR, NMR, Môssbauer, CV, MS)
 
 ## **EINES MATEMÀTIQUES**
 - [Regressió lineal, multilineal i polinòmica](codis/regresions.md)
 - [Resolució d'equacions](codis/res_eq.md)
 - [Matrius i Àlgebra Lineal](codis/matrius.md)
+- Derivades i integrals
 
 ## **MISCEL·LÀNIA**
 - [Tractament de fitxers](codis/fitxers.md)
-- Material de no-Python
 - [Generació i edició de taules](codis/taules.md)
-- Estadística
