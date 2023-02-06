@@ -14,6 +14,8 @@ parent: Codis
 {:toc}
 ---
 
+<a href=\"https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/Gr%C3%A0fiques.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>
+
 Primerament, importem el paquet que utilitzarem per fer les representacions gràfiques de les nostres dades, Matplotlib. Per raons de que sigui pràctic i per conveni d'altres programadors, s'abrevia amb plt. Si s'utilitza Jupyter notebook com a eina per córrer Python, només ficant la comanda ja s'ensenya el gràfic. Tot i això, en altres programes pot ser que calgui la comanda plt.show().
 ```js
 import matplotlib.pyplot as plt
