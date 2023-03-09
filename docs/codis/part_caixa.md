@@ -17,6 +17,9 @@ usemathjax: true
 
 ---
 
+
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/drive/1p1CHGAyPsPe2shpJYE5fkNBNJB8qfim2?usp=sharing)
+
 ## ***Caixa unidimensional***
 
 En aquest capítol aprendrem a graficar la forma més bàsica de la funció d'ona d'una partícula en una caixa unidimensonal:
