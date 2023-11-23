@@ -28,8 +28,8 @@ $$ \psi_n(x)=\sqrt{\frac{2}{L}}\sin{\left(\frac{n\pi}{L}x\right)} $$
 Primer necessitem importar les llibreries per aquest exercici en concret:
 
 ```py
-import matplotlib as plt
-import matplotlib.pyplot as pyplt
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 %matplotlib inline
 import numpy as np
 ```
@@ -58,9 +58,9 @@ I ara ja sí, fem les gràfiques.
 No entrarem en detall en el codi de les gràfiques perquè ja està tot explicat en el document de gràfiques.
 
 ```py
-pyplt.figure(figsize=(15,10))
+plt.figure(figsize=(15,10))
 
-pyplt.suptitle("Funcions d'ona", fontsize=18)
+plt.suptitle("Funcions d'ona", fontsize=18)
 
 for n in range(1,4):
 
@@ -70,23 +70,23 @@ for n in range(1,4):
     for x in x_list:
         psi_2_list.append(psi_2(n,L,x))
         psi_list.append(psi(n,L,x))
-    pyplt.subplot(3,2,2*n-1)
-    pyplt.plot(x_list, psi_list)
-    pyplt.xlabel("L", fontsize=13)
-    pyplt.ylabel("$\psi$", fontsize=13)
-    pyplt.xticks(np.arange(0, L, step=0.5))
-    pyplt.title("n="+str(n), fontsize=16)
-    pyplt.grid()
-    pyplt.subplot(3,2,2*n)
-    pyplt.plot(x_list, psi_2_list)
-    pyplt.xlabel("L", fontsize=13)
-    pyplt.ylabel("$\psi^2$", fontsize=13)
-    pyplt.xticks(np.arange(0, L, step=0.5))
-    pyplt.title("n="+str(n), fontsize=16)
-    pyplt.grid()
+    plt.subplot(3,2,2*n-1)
+    plt.plot(x_list, psi_list)
+    plt.xlabel("L", fontsize=13)
+    plt.ylabel("$\psi$", fontsize=13)
+    plt.xticks(np.arange(0, L, step=0.5))
+    plt.title("n="+str(n), fontsize=16)
+    plt.grid()
+    plt.subplot(3,2,2*n)
+    plt.plot(x_list, psi_2_list)
+    plt.xlabel("L", fontsize=13)
+    plt.ylabel("$\psi^2$", fontsize=13)
+    plt.xticks(np.arange(0, L, step=0.5))
+    plt.title("n="+str(n), fontsize=16)
+    plt.grid()
 
-pyplt.tight_layout(rect=[0, 0.03, 1, 0.95])
-pyplt.show()
+plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+plt.show()
 ```
 ![01](../images/part_caixa/01.png)
 
@@ -127,17 +127,17 @@ X,Y = np.meshgrid(x,y)
 psi = np.array([psi_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
 PSI = psi.reshape(X.shape)
 
-fig = pyplt.figure(figsize=(8,6))
+fig = plt.figure(figsize=(8,6))
 ax = fig.add_subplot(111, projection = '3d')
 
 ax.plot_surface(X,Y,PSI, cmap = 'binary')
 
-pyplt.xlabel('Coordenades X')
-pyplt.ylabel('Coordenades Y')
+plt.xlabel('Coordenades X')
+plt.ylabel('Coordenades Y')
 ax.set_zlabel("Funció d'ona")
-pyplt.title('$\psi$ per n=%s' %n)
+plt.title('$\psi$ per n=%s' %n)
 
-pyplt.show()
+plt.show()
 ```
 ![02](../images/part_caixa/02.png)
 
@@ -147,17 +147,17 @@ psi2 = np.array([psi2_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
 PSI2 = psi2.reshape(X.shape)
 
 
-fig = pyplt.figure(figsize=(8,6))
+fig = plt.figure(figsize=(8,6))
 ax = fig.add_subplot(111, projection = '3d')
 
 ax.plot_surface(X,Y,PSI2, cmap = 'binary')
 
-pyplt.xlabel('Coordenades X')
-pyplt.ylabel('Coordenades Y')
+plt.xlabel('Coordenades X')
+plt.ylabel('Coordenades Y')
 ax.set_zlabel("Funció d'ona")
-pyplt.title('$\psi^2$ per n=%s' %n)
+plt.title('$\psi^2$ per n=%s' %n)
 
-pyplt.show()
+plt.show()
 ```
 ![03](../images/part_caixa/03.png)
 
@@ -171,7 +171,7 @@ PSI = psi.reshape(X.shape)
 psi2 = np.array([psi2_3d(x,y) for x,y in zip(np.ravel(X),np.ravel(Y))])
 PSI2 = psi2.reshape(X.shape)
 
-fig = pyplt.figure(figsize=(15,6))
+fig = plt.figure(figsize=(15,6))
 ax1 = fig.add_subplot(121, projection = '3d')
 ax2 = fig.add_subplot(122, projection = '3d')
 
@@ -188,7 +188,7 @@ ax2.set_ylabel('Coordenades Y')
 ax2.set_zlabel("Funció d'ona")
 ax2.set_title('$\psi^2$ per n=%s' %n)
 
-pyplt.show()
+plt.show()
 ```
 ![04](../images/part_caixa/04.png)
 
