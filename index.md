@@ -24,5 +24,5 @@ Aquí trobareu a totes les persones que han contribuit en l'elaboració del proj
 ## [Codis](docs/codis.md)
 Teniu disponibles tots els codis que elaborem. Casadcú d'ells serveix per una cosa diferent. Qualsevol incident que us trobeu amb els codis de Python, podeu comunicar-vos amb nosaltres a través del correu xxxxxx@udg.edu.
 
-## [Referencies](docs/Referencies.md)
+## [Referencies](docs/referencies.md)
 Hem fet un recull de webs i eines que poden ser molt útils, i moltes de les quals han inspirat aquest projecte.
