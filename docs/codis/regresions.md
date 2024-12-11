@@ -14,6 +14,7 @@ parent: Codis
 {:toc}
 
 ---
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/regresions.ipynb)
 
 En aquest apartat es mostrarà com, d'una manera senzilla, podem fer diferents tipus de regressions. En concret es mostrarà com fer una regressió lineal,
 una regressió multilineal i una interpolació polinòmica.
