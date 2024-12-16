@@ -26,3 +26,6 @@ Teniu disponibles tots els codis que elaborem. Casadcú d'ells serveix per una c
 
 ## [Referencies](docs/referencies.md)
 Hem fet un recull de webs i eines que poden ser molt útils, i moltes de les quals han inspirat aquest projecte.
+
+
+⚠️ WEB EN OBRES!!
