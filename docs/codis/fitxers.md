@@ -3,6 +3,7 @@ layout: default
 title: Tractament de fitxers
 parent: Codis
 ---
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/fitxers.ipynb)
 
 En aquest capítol aprendrem a tractar les dades que obtinguem dels nostres estudis. Concretament, mirarem tres passos claus: carregar de les dades d'un fitxer, tractar-les i guardar-les en un fitxer. Primerament, exportem els paquets que utilitzarem.
 ```js
