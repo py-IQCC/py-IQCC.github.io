@@ -17,8 +17,6 @@ usemathjax: true
 
 ---
 
-# Capítol 1: Python bàsic
-
 ## 1.1 Números
 
 ### 1.1.1 Matemàtica bàsica
