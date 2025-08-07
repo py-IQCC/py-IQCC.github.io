@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Modelling of a chemical reaction using Python
+title: MBàsics de Python
 parent: Codis
 ---
 
-# **Modelling of a chemical reaction using Python**
+# **Bàsics de Python**
 {: .no_toc }
 
 ## Table of contents
