@@ -2,8 +2,6 @@
 layout: default
 title: Capítol 1: Python bàsic
 parent: Codis
-katex: True
-usemathjax: true
 ---
 
 # **Capítol 1: Python bàsic**
