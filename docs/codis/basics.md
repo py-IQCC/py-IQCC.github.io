@@ -15,6 +15,8 @@ parent: Codis
 
 ---
 
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/basics_ESPECTRO.ipynb)
+
 ## 1.1 Números
 
 ### 1.1.1 Matemàtica bàsica
@@ -40,7 +42,6 @@ Els operadors de suma, resta, multiplicació i divisió funcionen igual que a la
 ```
 ```py
 (8 + 3) * 2
-
 ```
 Potser has notat que hi ha espais al voltant dels operadors matemàtics en els exemples anteriors. Python *no* té en compte els espais *dins* d'una línia, així que pots afegir-ne per fer més llegible el càlcul. Tanmateix, sí que importa els espais a l'*inici* de les línies, tema que veurem més endavant quan parlem de condicions i bucles.
 
