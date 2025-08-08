@@ -61,7 +61,7 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 
 A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tres fitxers amb explicacions sobre programació en Python que us seran de gran ajuda per enendre el codi i poder ajustar-lo a les vostres necessitats:
 - [➤ Capítol 1: Python bàsic](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/basics.ipynb)
-- [➤ Capítol 2: Representació gràfica amb Matplotlib](#)
+- [➤ Capítol 2: Representació gràfica amb Matplotlib](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/grafics.ipynb)
 - [➤ Capítol 3: NumPy](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/numpy.ipynb)
 
 ---
