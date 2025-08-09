@@ -95,7 +95,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 - ⚠ No entregueu només les gràfiques: **cal comentar-les**.
 - ⚠ Les taules han de tenir **unitats** i estar ben presentades.
 - ⚠ Utilitzeu l’**error relatiu** per comparar amb valors experimentals.
-- ✅ Expressar nombres en **notació científica correcta**: $`3.00\cdot10^{-10}´$ i no $3.00E-10$.
+- ✅ Expressar nombres en **notació científica correcta**: $3.00\cdot10^{-10}$ i no $3.00E-10$.
 
 ---
 
