@@ -2,6 +2,8 @@
 layout: default
 title: Treball de l'assignatura Química Quàntica i Espectroscòpia (part espectro)
 parent: Codis
+katex: true
+usemathjax: true
 ---
 
 # 🔬 **Treball de Química Quàntica i Espectroscòpia: Simulació d’espectres**
@@ -57,7 +59,7 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 [➤ Fitxer de treball](#) 
 
 📄 **Execució directa a Google Colab:**  
-[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/part_caixa.ipynb)
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](#)
 
 A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tres fitxers amb explicacions sobre programació en Python que us seran de gran ajuda per enendre el codi i poder ajustar-lo a les vostres necessitats:
 - [➤ Capítol 1: Python bàsic](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/basics.ipynb)
@@ -69,8 +71,8 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 ## 📋 Instruccions
 
 1. **Feu una còpia del fitxer** de treball al vostre Google Drive.
-2. Completeu les seccions indicades al fitxer (`# <-- Aquí`) amb les dades de la vostra molècula i les formules necessaries.
-3. Executeu els blocs de codi per generar les gràfiques.
+2. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les formules necessaries.
+3. Executeu els blocs de codi per generar les dades i gràfiques.
 4. Responeu les preguntes teòriques al vostre document de treball.
 5. **Cal entregar el codi font** a més a més de la part escrita.
 
@@ -93,7 +95,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 - ⚠ No entregueu només les gràfiques: **cal comentar-les**.
 - ⚠ Les taules han de tenir **unitats** i estar ben presentades.
 - ⚠ Utilitzeu l’**error relatiu** per comparar amb valors experimentals.
-- ✅ Expressar nombres en **notació científica correcta**: $3.00\cdot10^{-10}$ i no $3.00E-10$.
+- ✅ Expressar nombres en **notació científica correcta**: $`3.00\cdot10^{-10}´$ i no $3.00E-10$.
 
 ---
 
