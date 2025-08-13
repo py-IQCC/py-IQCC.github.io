@@ -58,8 +58,11 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 📄 **Plantilla per descarregar:**  
 [➤ Fitxer de treball](#) 
 
-📄 **Execució directa a Google Colab:**  
-[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](#)
+📄 **Execució directa a Google Colab (alumne):**  
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/Treball_ESPECTRO_alumne.ipynb)
+
+📄 **Execució directa a Google Colab (profe):**  
+[<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/Treball_ESPECTRO_profe.ipynb)
 
 A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tres fitxers amb explicacions sobre programació en Python que us seran de gran ajuda per enendre el codi i poder ajustar-lo a les vostres necessitats:
 - [➤ Capítol 1: Python bàsic](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/basics.ipynb)
