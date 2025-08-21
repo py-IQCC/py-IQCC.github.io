@@ -1,5 +1,5 @@
 ---
-name: Dra. Silvia Simón
+name: Dra. Silvia Simon
 role: Professor
 email: silvia.simon@udg.edu
 <!-- website: https://kevinl.info -->
