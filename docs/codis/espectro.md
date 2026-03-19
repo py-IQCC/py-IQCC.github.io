@@ -44,7 +44,7 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 
 ---
 
-## 📂 Material proporcionat
+## 📂 Fitxers 
 
 📄 **Plantilla per descarregar:**  
 [➤ Fitxer de treball](#) 
@@ -62,7 +62,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ---
 
-## 📋 Instruccions
+## 📋 Instruccions per executar
 
 1. **Feu una còpia del fitxer** de treball al vostre Google Drive.
 2. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les formules necessaries.
@@ -72,7 +72,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ---
 
-## 📤 Lliurament
+## Lliurament
 
 - **Format:** PDF amb:
   - Comentaris i explicacions dels resultats
@@ -84,7 +84,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ---
 
-## 🧭 Revisions importants
+## Revisions importants
 
 - ⚠ No entregueu només les gràfiques: **cal comentar-les**.
 - ⚠ Les taules han de tenir **unitats** i estar ben presentades.
@@ -93,7 +93,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ---
 
-## ❓ Dubtes?
+## Dubtes
 
 Si teniu cap dubte sobre com completar el fitxer o sobre el funcionament del codi, podeu:
 - Assistir a l’horari de classe i ressoldre els dubtes després d'aquesta.
@@ -101,7 +101,4 @@ Si teniu cap dubte sobre com completar el fitxer o sobre el funcionament del cod
 
 ---
 
-## 🚀 Ànims!
-
-Aquest treball us ajudarà a entendre com la teoria espectroscòpica es connecta amb la realitat observable. I a més, és la vostra primera presa de contacte amb la **programació científica**!
 
