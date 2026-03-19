@@ -6,15 +6,15 @@ katex: true
 usemathjax: true
 ---
 
-# 🔬 **Treball de Química Quàntica i Espectroscòpia: Simulació d’espectres**
+# **Treball de Química Quàntica i Espectroscòpia: Simulació d’espectres de molècules diatòmiques**
 
 ---
 
 ## 📌 Objectiu del treball
 
-En aquest treball simularem **espectres de rotació i rotació-vibració de molècules diatòmiques** mitjançant Python. Es tracta de posar en pràctica la teoria treballada a classe per entendre millor com es generen els espectres i què podem extreure’n a partir de les constants espectroscòpiques.
+En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de compendre millor conceptes apresos a classe.
 
-> 🧠 **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar.
+> **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar.
 
 ---
 
