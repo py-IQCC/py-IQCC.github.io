@@ -10,24 +10,15 @@ usemathjax: true
 
 ---
 
-## 📌 Objectiu del treball
+## Objectiu del treball
 
-En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de compendre millor conceptes apresos a classe.
+En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de comprendre millor conceptes apresos a classe.
 
 > **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar.
 
 ---
 
-## 🧪 El vostre repte
-
-Simular els espectres següents per una molècula concreta:
-- **Espectre de rotació pura**
-- **Espectre fonamental de rotació-vibració**
-- **Càlcul de l’energia de dissociació**
-
----
-
-## 🛠 Estructura del treball
+## Estructura del treball
 
 El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla proporcionada:
 
