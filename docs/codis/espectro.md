@@ -65,7 +65,7 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 2. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les fórmules necessaries.
 3. Executeu els blocs de codi per generar les dades i gràfiques.
 4. Responeu les preguntes teòriques al vostre document de treball.
-5. **Cal entregar el codi font** a més a més de la part escrita.
+5. **Cal entregar el codi font** a més a més de la part escrita (us el podeu baixar, per exemple, del CoLab en format *.ipynb i penjar-lo en aquest mateix format)
 
 ---
 
