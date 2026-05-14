@@ -46,7 +46,7 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 
 ## 📂 Fitxers 
 
-Per tal de fer el treball, poder descarregar el fitxer `.py` per fer-lo còrrer en local des de la vostra terminal o programes d'execució tipus VSCode, o bé podeu fer-lo còrrer al Google Colab i el tindreu al vostre Drive personal.
+Per tal de fer el treball, podeu descarregar el fitxer `.py` per fer-lo còrrer en local des de la vostra terminal o programes d'execució tipus VSCode, o bé podeu fer-lo còrrer al Google Colab i el tindreu al vostre Drive personal.
 
 📄 **Plantilla per descarregar i còrrer en local:**  
 [➤ Fitxer de treball (.py)](#) 
@@ -63,11 +63,13 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ## 📋 Instruccions per executar
 
-1. **Feu una còpia del fitxer** de treball al vostre Google Drive. [Arxiu > Guardar una còpia a Drive]
-2. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les fórmules necessaries.
-3. Executeu els blocs de codi per generar les dades i gràfiques. [Al costat de cada cel·la de codi surt un triangle dins d'un cercle, l'heu de prèmer]
-4. Responeu les preguntes teòriques al vostre document de treball.
-5. **Cal entregar el codi font** a més a més de la part escrita (us el podeu baixar, per exemple, del Colab en format *.ipynb, NO *.py, i penjar-lo en aquest mateix format). [Arxiu > Descarregar > Descarregar com .ipynb]
+1. **Feu una còpia del fitxer** de treball al vostre Google Drive.
+   [Arxiu > Guardar una còpia a Drive]
+3. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les fórmules necessaries.
+4. Executeu els blocs de codi per generar les dades i gràfiques. [Al costat de cada cel·la de codi surt un triangle dins d'un cercle, l'heu de prèmer]
+5. Responeu les preguntes teòriques al vostre document de treball.
+6. **Cal entregar el codi font** a més a més de la part escrita (us el podeu baixar, per exemple, del Colab en **format .ipynb [NO .py]** i penjar-lo en aquest mateix format).
+   [Arxiu > Descarregar > Descarregar com .ipynb]
 
 ---
 
