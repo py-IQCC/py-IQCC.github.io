@@ -79,8 +79,9 @@ El format del treball és una mica lliure, no cal que poseu apartats ni que aneu
   - Comentaris i explicacions dels resultats
   - Gràfiques amb peu de figura
   - Taules amb valors calculats, comparació amb valors del NIST i cap de taula
-- **Termini:** Dilluns 8 de Juny del 2026 a les 23:59 (Aniré corregint a mesura que aneu entregant. Penseu que no tindreu la nota final de QQE fins que no hagi corregit, per tant quant abans millor).
-- **Com enviar-ho:** a través de la tasca que trobareu al Moodle de l'assignatura
+
+**Termini:** Dilluns 8 de Juny del 2026 a les 23:59 (Aniré corregint a mesura que aneu entregant. Penseu que no tindreu la nota final de QQE fins que no hagi corregit, per tant quant abans millor).
+**Com enviar-ho:** a través de la tasca que trobareu al Moodle de l'assignatura
 
 ---
 
