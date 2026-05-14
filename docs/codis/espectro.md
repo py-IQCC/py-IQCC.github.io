@@ -46,10 +46,12 @@ El treball es divideix en 4 grans blocs que trobareu explicades a la plantilla p
 
 ## 📂 Fitxers 
 
-📄 **Plantilla per descarregar:**  
-[➤ Fitxer de treball](#) 
+Per tal de fer el treball, poder descarregar el fitxer `.py` per fer-lo còrrer en local des de la vostra terminal o programes d'execució tipus VSCode, o bé podeu fer-lo còrrer al Google Colab i el tindreu al vostre Drive personal.
 
-📄 **Execució directa a Google Colab (recorda que un cop obert cal fer una còpia al teu Drive per poder executar-lo!):**  
+📄 **Plantilla per descarregar i còrrer en local:**  
+[➤ Fitxer de treball (.py)](#) 
+
+📄 **Execució directa a Google Colab:**  
 [<img style='display:inline; line-height:0.8em; padding:0; margin:0 0.5em -0.4em 0;' src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/py-IQCC/py-IQCC.github.io/blob/main/Treball_ESPECTRO_alumne.ipynb)
 
 A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tres fitxers amb explicacions sobre programació en Python que us seran de gran ajuda per enendre el codi i poder ajustar-lo a les vostres necessitats:
@@ -61,11 +63,11 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ## 📋 Instruccions per executar
 
-1. **Feu una còpia del fitxer** de treball al vostre Google Drive.
+1. **Feu una còpia del fitxer** de treball al vostre Google Drive. [Arxiu > Guardar una còpia a Drive]
 2. Completeu les seccions indicades al fitxer (`...`) amb les dades de la vostra molècula i les fórmules necessaries.
-3. Executeu els blocs de codi per generar les dades i gràfiques.
+3. Executeu els blocs de codi per generar les dades i gràfiques. [Al costat de cada cel·la de codi surt un triangle dins d'un cercle, l'heu de prèmer]
 4. Responeu les preguntes teòriques al vostre document de treball.
-5. **Cal entregar el codi font** a més a més de la part escrita (us el podeu baixar, per exemple, del CoLab en format *.ipynb i penjar-lo en aquest mateix format)
+5. **Cal entregar el codi font** a més a més de la part escrita (us el podeu baixar, per exemple, del Colab en format *.ipynb, NO *.py, i penjar-lo en aquest mateix format). [Arxiu > Descarregar > Descarregar com .ipynb]
 
 ---
 
