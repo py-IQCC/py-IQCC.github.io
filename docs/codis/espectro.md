@@ -14,7 +14,7 @@ usemathjax: true
 
 En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de comprendre millor conceptes apresos a classe. També calculareu **l'energia de dissociació** a partir de les dades espectroscòpiques i les comparareu amb l'experimental així com la obtinguda al treball de quàntica.
 
-> **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar. Tot i això, us podeu baixar el fitxer i, amb poques nocions de Python, adaptar-lo al les vostres necessitats.
+> **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar. Tot i això, us podeu baixar el fitxer i, amb poques nocions de Python, adaptar-lo a les vostres necessitats.
 
 ---
 
