@@ -71,7 +71,8 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 
 ## Lliurament
 
-- **Format:** PDF amb:
+- **Format:** Format PDF
+
 El format del treball és una mica lliure, no cal que poseu apartats ni que aneu comentant en el mateix ordre que teniu al fitxer. Ara, ha de contenir la discussió sobre els diferents aspectes.
   - Comenceu afegint la PES que heu obtingut al treball anterior, com a connexió entre les dues parts.
   - Nom dels membres del grup i molècula a treballar
