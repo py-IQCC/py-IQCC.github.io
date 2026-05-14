@@ -12,9 +12,9 @@ usemathjax: true
 
 ## Objectiu del treball
 
-En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de comprendre millor conceptes apresos a classe.
+En aquest treball simularem **espectres de rotació i rotació-vibració** de la molècula que heu estat treballant a la primera part de l'assignatura. A partir de les dades obtingudes (la superfície de potencial) posareu en pràctica la teoria treballada a classe. L'objectiu principal és que sigui una ajuda per tal de comprendre millor conceptes apresos a classe. També calculareu **l'energia de dissociació** a partir de les dades espectroscòpiques i les comparareu amb l'experimental així com la obtinguda al treball de quàntica.
 
-> **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar.
+> **No cal que tingueu coneixements previs de Python**. Us proporcionem una plantilla preparada i comentada que només caldrà completar i executar. Tot i això, us podeu baixar el fitxer i, amb poques nocions de Python, adaptar-lo al les vostres necessitats.
 
 ---
 
@@ -72,21 +72,23 @@ A banda de proporcionar-vos la plantilla per fer el treball, us proporcionem tre
 ## Lliurament
 
 - **Format:** PDF amb:
+El format del treball és una mica lliure, no cal que poseu apartats ni que aneu comentant en el mateix ordre que teniu al fitxer. Ara, ha de contenir la discussió sobre els diferents aspectes.
+  - Comenceu afegint la PES que heu obtingut al treball anterior, com a connexió entre les dues parts.
+  - Nom dels membres del grup i molècula a treballar
   - Comentaris i explicacions dels resultats
   - Gràfiques amb peu de figura
   - Taules amb valors calculats, comparació amb valors del NIST i cap de taula
-  - Molècula i PES (polinomi) emprats
-- **Termini:** [Data límit]
+- **Termini:** Dilluns 8 de Juny del 2026 a les 23:59 (Aniré corregint a mesura que aneu entregant. Penseu que no tindreu la nota final de QQE fins que no hagi corregit, per tant quant abans millor).
 - **Com enviar-ho:** a través de la tasca que trobareu al Moodle de l'assignatura
 
 ---
 
 ## Revisions importants
 
-- ⚠ No entregueu només les gràfiques: **cal comentar-les**.
-- ⚠ Les taules han de tenir **unitats** i estar ben presentades.
-- ⚠ Utilitzeu l’**error relatiu** per comparar amb valors experimentals.
-- ✅ Expressar nombres en **notació científica correcta**: $3.00\cdot10^{-10}$ i no $3.00E-10$.
+- No entregueu només les gràfiques: **cal comentar-les**.
+- Les taules han de tenir **unitats** i estar ben presentades.
+- Utilitzeu l’**error relatiu** per comparar amb valors experimentals.
+- Expressar nombres en **notació científica correcta**: $3.00\cdot10^{-10}$ i no $3.00E-10$.
 
 ---
 
